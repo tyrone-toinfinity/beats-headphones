@@ -1,85 +1,40 @@
 export default {
-  name: 'product',
-  title: 'Product',
-  type: 'document',
+  name: "product",
+  title: "Product",
+  type: "document",
   fields: [
     {
-      name: 'title',
-      title: 'Title',
-      type: 'string',
-    },
-    {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
+      name: "title",
+      title: "Image",
+      type: "array",
+      of: [{ type: "image" }],
       options: {
-        source: 'title',
-        maxLength: 96,
+        hotspot: true,
       },
     },
     {
-      title: 'Default variant',
-      name: 'defaultProductVariant',
-      type: 'productVariant',
+      name: "name",
+      title: "Name",
+      type: "string",
     },
     {
-      title: 'Variants',
-      name: 'variants',
-      type: 'array',
-      of: [
-        {
-          title: 'Variant',
-          type: 'productVariant',
-        },
-      ],
-    },
-    {
-      title: 'Tags',
-      name: 'tags',
-      type: 'array',
-      of: [
-        {
-          type: 'string',
-        },
-      ],
-      options: {
-        layout: 'tags',
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      option: {
+        source: "name",
+        maxLength: 90,
       },
     },
     {
-      name: 'vendor',
-      title: 'Vendor',
-      type: 'reference',
-      to: {type: 'vendor'},
+      name: "price",
+      title: "Price",
+      type: "number",
     },
     {
-      name: 'blurb',
-      title: 'Blurb',
-      type: 'localeString',
-    },
-    {
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [
-        {
-          type: 'reference',
-          to: {type: 'category'},
-        },
-      ],
-    },
-    {
-      name: 'body',
-      title: 'Body',
-      type: 'localeBlockContent',
+      name: "details",
+      title: "Details",
+      type: "string",
     },
   ],
-
-  preview: {
-    select: {
-      title: 'title',
-      manufactor: 'manufactor.title',
-      media: 'defaultProductVariant.images[0]',
-    },
-  },
-}
+};
