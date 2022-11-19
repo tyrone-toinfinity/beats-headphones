@@ -1,6 +1,7 @@
-export { default as Layout } from "./Layout";
-export { default as Navbar } from "./Navbar";
-export { default as Product } from "./Product";
-export { default as HeroBanner } from "./HeroBanner";
-export { default as Footer } from "./Footer";
-export { default as Cart } from "./Cart";
+export { default as Navbar } from "./components/Navbar";
+export { default as Product } from "./components/Product";
+export { default as HeroBanner } from "./components/HeroBanner";
+export { default as Footer } from "./components/Footer";
+export { default as Cart } from "./components/Cart";
+export { default as Shop } from "./Shop";
+export { default as ShippingBanner } from "./components/ShippingBanner";

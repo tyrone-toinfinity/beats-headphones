@@ -1,0 +1,46 @@
+.product-title {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 3rem;
+  font-weight: 700;
+}
+
+.productsContainer {
+  background-color: #f0f0f0;
+  padding-bottom: 6rem;
+}
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.shoppingCards {
+  border: none;
+}
+.shoppingHeader {
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.shoppingImg {
+  width: 90px;
+  aspect-ratio: 1/1;
+  margin: 2rem auto;
+}
+
+.learnMore > a {
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+.learnMore > a:hover {
+  border-bottom: 2px solid red;
+}

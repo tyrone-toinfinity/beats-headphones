@@ -1,0 +1,418 @@
+{
+  "headpones": [
+    {
+      "id": "1",
+      "@type": "Product",
+      "name": "Beats Fit Pro",
+      "image": "assets/product-img/beats01.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "white",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "149.99"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    },
+    {
+      "id": "2",
+      "@type": "Product",
+      "name": "Beats Fit Pro",
+      "image": "assets/product-img/beats02.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "stone purple",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "149.99"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    },
+    {
+      "id": "3",
+      "@type": "Product",
+      "name": "Beats Fit Pro",
+      "image": "assets/product-img/beats03.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "sage gray",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "149.99"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    },
+    {
+      "id": "4",
+      "@type": "Product",
+      "name": "Beats Fit Pro",
+      "image": "assets/product-img/beats04.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "black",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "149.99"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    },
+    {
+      "id": "5",
+      "@type": "Product",
+      "name": "Beats Studio³",
+      "image": "assets/product-img/beats05.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "white",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "349.95"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    },
+    {
+      "id": "6",
+      "@type": "Product",
+      "name": "Beats Studio³",
+      "image": "assets/product-img/beats06.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "stone purple",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "349.95"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    },
+    {
+      "id": "7",
+      "@type": "Product",
+      "name": "Beats Studio³",
+      "image": "assets/product-img/beats06.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "sage gray",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "349.95"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    },
+    {
+      "id": "8",
+      "@type": "Product",
+      "name": "Beats Studio³",
+      "image": "assets/product-img/beats08.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "black",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "349.95"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    },
+    {
+      "id": "9",
+      "@type": "Product",
+      "name": "Beats Studio³",
+      "image": "assets/product-img/beats09.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "white",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "349.95"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    },
+    {
+      "id": "10",
+      "@type": "Product",
+      "name": "Beats Studio³",
+      "image": "assets/product-img/beats10.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "stone purple",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "349.95"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    },
+    {
+      "id": "11",
+      "@type": "Product",
+      "name": "Beats Studio³",
+      "image": "assets/product-img/beats11.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "sage gray",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "349.95"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    },
+    {
+      "id": "12",
+      "@type": "Product",
+      "name": "Beats Flex",
+      "image": "assets/product-img/beats12.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "black",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "69.99"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    },
+    {
+      "id": "13",
+      "@type": "Product",
+      "name": "Beats Flex",
+      "image": "assets/product-img/beats13.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "white",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "69.99"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    },
+    {
+      "id": "14",
+      "@type": "Product",
+      "name": "Beats Flex",
+      "image": "assets/product-img/beats14.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "stone purple",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "69.99"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    },
+    {
+      "id": "15",
+      "@type": "Product",
+      "name": "Beats Flex",
+      "image": "assets/product-img/beats15.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "sage gray",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "69.99"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    },
+    {
+      "id": "16",
+      "@type": "Product",
+      "name": "Beats Solo³ Wireless",
+      "image": "assets/product-img/beats16.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "black",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "199.95"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    },
+    {
+      "id": "17",
+      "@type": "Product",
+      "name": "Beats Solo³ Wireless",
+      "image": "assets/product-img/beats17.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "black",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "199.95"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    },
+    {
+      "id": "18",
+      "@type": "Product",
+      "name": "Beats Solo³ Wireless",
+      "image": "assets/product-img/beats18.jpeg",
+      "description": "True Wireless Noise Cancelling Earbuds",
+      "color": "black",
+      "brand": {
+        "@type": "Brand",
+        "name": "Beats"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "199.95"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "",
+        "ratingCount": "",
+        "reviewCount": ""
+      }
+    }
+  ]
+}

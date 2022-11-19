@@ -1,0 +1,21 @@
+.shippingBanner {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0.7rem 0;
+  font-weight: 700;
+  animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+  0% {
+    visibility: hidden;
+    transform: translateY(-100px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateY(0px);
+  }
+}

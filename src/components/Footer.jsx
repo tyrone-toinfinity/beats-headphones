@@ -3,7 +3,6 @@ import "./Footer.css";
 
 const Footer = () => {
   const year = new Date().getFullYear();
-  console.log(year);
 
   return (
     <div className="legal-container">
