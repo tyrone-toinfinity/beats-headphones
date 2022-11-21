@@ -1,0 +1,136 @@
+/* Wrapper */
+
+.cartWrapper {
+  margin: auto;
+  max-width: 80rem;
+  display: grid;
+  grid-template-columns: 1fr 24.375rem;
+  gap: 2.5rem;
+}
+
+.cartContainer {
+  /* background-color: #f6f6f6; */
+  padding: 3.3rem 2rem;
+  max-width: 1000px;
+  grid-column: 1/2;
+}
+
+.cartTitle {
+  margin: 0 0 0.25rem 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: 0.25rem;
+  border-bottom: rgba(200, 200, 200, 0.9) 1px solid;
+}
+
+.cartLink {
+  color: #666;
+}
+.cartLink:hover {
+  color: #666;
+}
+.cartEmptyText {
+  font-weight: 300;
+  font-size: 1.13rem;
+  letter-spacing: 0.5px;
+  margin: 2rem 0 0.25rem 0.5rem;
+  max-width: 1000px;
+}
+
+.cartProductsBtn > * {
+  background-color: #333;
+  padding: 1rem;
+  margin: 2rem 0;
+  border: none;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.88);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.cartProductsBtn > *:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Cart Summary */
+.cartItems {
+  padding: 3.3rem 1rem;
+  grid-column: 2/-1;
+  background-color: #f6f6f6;
+}
+
+.cartSummary {
+  margin: 0 0 0.25rem 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: 0.25rem;
+  border-bottom: rgba(0, 0, 0, 0.9) 1px solid;
+}
+
+.cartItems > ul {
+  margin: 2rem 0 0.25rem 0.5rem;
+  padding: 0;
+}
+.cartItems > ul > li {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 13px;
+  letter-spacing: 1.6px;
+  list-style: none;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.cartItems > ul > li:last-child {
+  border-top: rgba(0, 0, 0, 0.9) 1px solid;
+  padding-top: 1rem;
+}
+.cartItems > p {
+  margin: 2rem 0 0.25rem 0.5rem;
+  font-weight: 300;
+  color: #666;
+}
+
+.btnCheckout {
+  background-color: #333;
+  padding: 1rem;
+  margin: 2rem 0;
+  border: none;
+  width: 100%;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.88);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.btnCheckout:disabled {
+  background-color: #c8c8c8;
+  padding: 1rem;
+  margin: 2rem 0;
+  border: none;
+  width: 100%;
+  font-size: 0.8rem;
+  color: #000;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* logo */
+.checkoutLogosContainer {
+  display: flex;
+  flex-direction: column;
+}
+.checkoutLogosContainer > figure {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.checkoutLogos {
+  width: 30px;
+}

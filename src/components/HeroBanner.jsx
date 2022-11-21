@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Link } from "react-router-dom";
 import "./HeroBanner.css";
 
-const HeroBanner = () => {
+export const HeroBanner = () => {
   return (
     <main className="hero-banner-container">
       <div className="banner-wrapper">
@@ -13,7 +13,7 @@ const HeroBanner = () => {
           <p>Powered by Beats Fit Pro</p>
 
           <div className="btn-Hero">
-            <Link to="">
+            <Link to="/shop">
               <button className="btn-01" role="button">
                 shop
               </button>
@@ -24,5 +24,3 @@ const HeroBanner = () => {
     </main>
   );
 };
-
-export default HeroBanner;

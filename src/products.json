@@ -2,7 +2,7 @@
   "headpones": [
     {
       "id": "1",
-      "@type": "Product",
+      "@type": "earbuds",
       "name": "Beats Fit Pro",
       "image": "assets/product-img/beats01.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -25,7 +25,7 @@
     },
     {
       "id": "2",
-      "@type": "Product",
+      "@type": "earbuds",
       "name": "Beats Fit Pro",
       "image": "assets/product-img/beats02.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -48,7 +48,7 @@
     },
     {
       "id": "3",
-      "@type": "Product",
+      "@type": "earbuds",
       "name": "Beats Fit Pro",
       "image": "assets/product-img/beats03.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -71,7 +71,7 @@
     },
     {
       "id": "4",
-      "@type": "Product",
+      "@type": "earbuds",
       "name": "Beats Fit Pro",
       "image": "assets/product-img/beats04.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -94,7 +94,7 @@
     },
     {
       "id": "5",
-      "@type": "Product",
+      "@type": "headphones",
       "name": "Beats Studio³",
       "image": "assets/product-img/beats05.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -117,7 +117,7 @@
     },
     {
       "id": "6",
-      "@type": "Product",
+      "@type": "headphones",
       "name": "Beats Studio³",
       "image": "assets/product-img/beats06.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -140,7 +140,7 @@
     },
     {
       "id": "7",
-      "@type": "Product",
+      "@type": "headphones",
       "name": "Beats Studio³",
       "image": "assets/product-img/beats06.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -163,7 +163,7 @@
     },
     {
       "id": "8",
-      "@type": "Product",
+      "@type": "headphones",
       "name": "Beats Studio³",
       "image": "assets/product-img/beats08.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -186,7 +186,7 @@
     },
     {
       "id": "9",
-      "@type": "Product",
+      "@type": "headphones",
       "name": "Beats Studio³",
       "image": "assets/product-img/beats09.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -209,7 +209,7 @@
     },
     {
       "id": "10",
-      "@type": "Product",
+      "@type": "headphones",
       "name": "Beats Studio³",
       "image": "assets/product-img/beats10.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -232,7 +232,7 @@
     },
     {
       "id": "11",
-      "@type": "Product",
+      "@type": "headphones",
       "name": "Beats Studio³",
       "image": "assets/product-img/beats11.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -255,7 +255,7 @@
     },
     {
       "id": "12",
-      "@type": "Product",
+      "@type": "earbuds",
       "name": "Beats Flex",
       "image": "assets/product-img/beats12.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -278,7 +278,7 @@
     },
     {
       "id": "13",
-      "@type": "Product",
+      "@type": "earbuds",
       "name": "Beats Flex",
       "image": "assets/product-img/beats13.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -301,7 +301,7 @@
     },
     {
       "id": "14",
-      "@type": "Product",
+      "@type": "earbuds",
       "name": "Beats Flex",
       "image": "assets/product-img/beats14.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -324,7 +324,7 @@
     },
     {
       "id": "15",
-      "@type": "Product",
+      "@type": "earbuds",
       "name": "Beats Flex",
       "image": "assets/product-img/beats15.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -347,7 +347,7 @@
     },
     {
       "id": "16",
-      "@type": "Product",
+      "@type": "headphones",
       "name": "Beats Solo³ Wireless",
       "image": "assets/product-img/beats16.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -370,7 +370,7 @@
     },
     {
       "id": "17",
-      "@type": "Product",
+      "@type": "headphones",
       "name": "Beats Solo³ Wireless",
       "image": "assets/product-img/beats17.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -393,7 +393,7 @@
     },
     {
       "id": "18",
-      "@type": "Product",
+      "@type": "headphones",
       "name": "Beats Solo³ Wireless",
       "image": "assets/product-img/beats18.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",

@@ -6,7 +6,7 @@ import { useState } from "react";
 import Card from "react-bootstrap/Card";
 import "./Product.css";
 
-const Product = () => {
+export const Product = () => {
   const [error, setError] = useState(null);
   const [isloaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
@@ -116,5 +116,3 @@ const Product = () => {
     );
   }
 };
-
-export default Product;

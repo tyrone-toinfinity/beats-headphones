@@ -1,9 +1,10 @@
 import React from "react";
 import "./Navbar.css";
 import { FaSearch, FaShoppingCart } from "react-icons/fa";
+import { FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <nav>
       <div className="desktop-nav">
@@ -24,7 +25,10 @@ const Navbar = () => {
           </Link>
         </ul>
         <div className="shoppingCart">
-          <FaShoppingCart />
+          <Link to="/cart" className="cartLogo">
+            <FiShoppingCart />
+          </Link>
+
           <p>{0}</p>
         </div>
       </div>
@@ -53,5 +57,3 @@ const Navbar = () => {
     </nav>
   );
 };
-
-export default Navbar;

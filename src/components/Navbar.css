@@ -43,16 +43,22 @@
   font-weight: 700;
   font-size: 0.7rem;
 }
-/* 
-/* 
-.navbar > li:hover {
-  border-bottom: 1px red solid;
-} */
+.cartLogo {
+  color: #444;
+}
+.cartLogo:hover {
+  color: #444;
+}
 
 .navbar > a {
   padding: 0.2rem;
   text-decoration: none;
   color: #222;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+.navbar > a:hover {
+  border-bottom: 2px red solid;
 }
 .mobile-nav {
   display: none;
