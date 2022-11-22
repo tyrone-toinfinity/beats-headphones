@@ -1,7 +1,7 @@
 .shopTitle {
   font-weight: 900;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 52px;
   letter-spacing: -1px;
   margin: 5rem 0;
@@ -31,4 +31,134 @@
 }
 .headphones > p:hover {
   opacity: 1;
+}
+
+/* Earbuds products */
+.earbudsWrapper {
+  display: flex;
+  max-width: 80rem;
+  margin: auto;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+.earBudsTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.earbudsHero {
+  width: 480px;
+  margin: 0 1rem;
+  animation: slideUp 1s ease 0s;
+  opacity: 1;
+  border-radius: 10px;
+}
+.earbudsHero::before {
+  opacity: 0;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.earBudsFeatures {
+  padding: 0;
+}
+.earBudsFeatures > li {
+  margin: 1rem;
+  color: #161616;
+  font-size: 1rem;
+}
+.newColors {
+  color: #e31837;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.13;
+  text-transform: uppercase;
+  margin-top: 9px;
+}
+
+.earBudsHeroTitle {
+  color: #161616;
+  font-size: 1.9rem;
+  font-weight: 900;
+  line-height: 1.16;
+  letter-spacing: -1px;
+  margin: 0.33rem 0;
+}
+.earBudsHeroPrice {
+  color: #161616;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 1.4px;
+  margin: 0.33rem 0;
+}
+
+/* Colors */
+.earBudsColors {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0.25rem;
+}
+.dots,
+.dotsSolo {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0.33rem;
+  cursor: pointer;
+}
+.dots:first-child {
+  background-color: #000;
+}
+.dots:nth-child(2) {
+  background-color: #ebebeb;
+}
+.dots:nth-child(3) {
+  background-color: #6c6c6d;
+}
+.dots:nth-child(4) {
+  background-color: #e4ccee;
+}
+.dots:nth-child(5) {
+  background-color: peru;
+}
+
+.dotsSolo:first-child {
+  background-color: #000;
+}
+.dotsSolo:nth-child(2) {
+  background-color: #cb9995;
+}
+.dotsSolo:nth-child(3) {
+  background-color: #ce2617;
+}
+.currentColor {
+  margin: 0.75rem 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* Footer product info */
+.productFooterInfo {
+  margin: 8rem auto;
+  max-width: 70rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #757575;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, ShippingBanner } from "./index";
+import { Navbar, ShippingBanner, Footer } from "./index";
 import "./Cart.css";
 import { Link } from "react-router-dom";
 import { Shop } from "./Shop";
@@ -79,6 +79,7 @@ export const Cart = () => {
           </div>
         </aside>
       </div>
+      <Footer />
     </section>
   );
 };

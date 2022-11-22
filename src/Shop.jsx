@@ -1,8 +1,34 @@
 import React from "react";
-import { Navbar, ShippingBanner } from "./index";
+import { useState, useRef } from "react";
+import { Navbar, ShippingBanner, Footer } from "./index";
 import "./Shop.css";
 
 export const Shop = () => {
+  const [color, setColor] = useState("Beats Black");
+  const [colorSolos, setColorSolos] = useState("Matte Black");
+  const [earbudsHeroProduct, setEarbudsHeroProduct] = useState(
+    <img
+      src="assets/product-img/beats04.1.jpeg"
+      alt=""
+      className="earbudsHero"
+    />
+  );
+
+  const [headphonesHeroProduct, setHeadphonesHeroProduct] = useState(
+    <img
+      src="assets/product-img/beats17.1.jpeg"
+      alt=""
+      className="earbudsHero"
+    />
+  );
+  const headphones = useRef();
+  function handleClickHeadphones() {
+    headphones.current.scrollIntoView({ behavior: "smooth" });
+  }
+  const earbuds = useRef();
+  function handleClickEarbuds() {
+    earbuds.current.scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <div>
       <Navbar />
@@ -15,21 +41,205 @@ export const Shop = () => {
             src="./assets/logos/earbudLogo.svg"
             alt=""
             className="earbudIcon"
+            onClick={handleClickEarbuds}
+            onDoubleClick={handleClickEarbuds}
           />
-          <p>Earbuds</p>
+          <p onClick={handleClickEarbuds} onDoubleClick={handleClickEarbuds}>
+            Earbuds
+          </p>
         </div>
-        <div className="headphones" onClick={() => console.log("you did it")}>
+
+        <div className="headphones">
           <img
             src="./assets/logos/headphoneLogo.svg"
             alt=""
             className="earbudIcon"
+            onClick={handleClickHeadphones}
+            onDoubleClick={handleClickHeadphones}
           />
-          <p>Headphones</p>
+          <p
+            onClick={handleClickHeadphones}
+            onDoubleClick={handleClickHeadphones}
+          >
+            Headphones
+          </p>
         </div>
       </div>
 
-      <h1 className="shopTitle">WIRELESS EARBUDS</h1>
-      <h1 className="shopTitle">WIRELESS HEADPHONES</h1>
+      <h1 className="shopTitle" ref={earbuds}>
+        WIRELESS EARBUDS
+      </h1>
+      <div className="earbudsWrapper">
+        {earbudsHeroProduct}
+        <div className="earBudsTextContainer">
+          <h5 className="newColors">new colors</h5>
+          <h3 className="earBudsHeroTitle">Beats Fit Pro</h3>
+          <h4 className="earBudsHeroPrice">$199.99</h4>
+          <ul className="earBudsFeatures">
+            <li>Flexible, secure-fit wingtips</li>
+            <li>Active Noise Cancelling (ANC) and Transparency mode</li>
+            <li>Up to 6 hours of listening time with ANC on</li>
+            <li>Auto Play/Pause connection via Apple H1 chip</li>
+          </ul>
+          <div className="earBudsColors">
+            {" "}
+            <h6>4 Colors</h6>{" "}
+            <div>
+              <span
+                className="dots"
+                onClick={() => {
+                  setEarbudsHeroProduct(
+                    <img
+                      src="assets/product-img/beats04.1.jpeg"
+                      alt=""
+                      className="earbudsHero"
+                    />
+                  );
+
+                  setColor("Beats Black");
+                }}
+              ></span>
+              <span
+                className="dots"
+                onClick={() => {
+                  setEarbudsHeroProduct(
+                    <img
+                      src="assets/product-img/beats01.1.jpeg"
+                      alt=""
+                      className="earbudsHero"
+                    />
+                  );
+                  setColor("Beats White");
+                }}
+              ></span>
+              <span
+                className="dots"
+                onClick={() => {
+                  setEarbudsHeroProduct(
+                    <img
+                      src="assets/product-img/beats03.1.jpeg"
+                      alt=""
+                      className="earbudsHero"
+                    />
+                  );
+                  setColor("Sage Gray");
+                }}
+              ></span>
+              <span
+                className="dots"
+                onClick={() => {
+                  setEarbudsHeroProduct(
+                    <img
+                      src="assets/product-img/beats02.1.jpeg"
+                      alt=""
+                      className="earbudsHero"
+                    />
+                  );
+                  setColor("Stone Purple");
+                }}
+              ></span>
+            </div>
+          </div>
+          <div className="currentColor"> {color}</div>
+        </div>
+      </div>
+      <h1 className="shopTitle" ref={headphones}>
+        WIRELESS HEADPHONES
+      </h1>
+      <div className="earbudsWrapper">
+        {headphonesHeroProduct}
+        <div className="earBudsTextContainer">
+          <h5 className="newColors">new colors</h5>
+          <h3 className="earBudsHeroTitle">
+            Beats Solo<sup>3</sup> <br />
+            Wireless
+          </h3>
+          <h4 className="earBudsHeroPrice">$199.99</h4>
+          <ul className="earBudsFeatures">
+            <li>Adjustable fit with comfort-cushioned ear cups</li>
+            <li>
+              Fine-tuned acoustics for clarity and depth with noise isolation
+            </li>
+            <li>Up to 40 hours of listening time</li>
+            <li>Apple W1 chip & Class 1 Wireless Bluetooth®</li>
+          </ul>
+          <div className="earBudsColors">
+            {" "}
+            <h6>4 Colors</h6>{" "}
+            <div>
+              <span
+                className="dotsSolo"
+                onClick={() => {
+                  setHeadphonesHeroProduct(
+                    <img
+                      src="assets/product-img/beats17.1.jpeg"
+                      alt=""
+                      className="earbudsHero"
+                    />
+                  );
+                  setColorSolos("Matte Black");
+                }}
+              ></span>
+              <span
+                className="dotsSolo"
+                onClick={() => {
+                  setHeadphonesHeroProduct(
+                    <img
+                      src="assets/product-img/beats16.1.jpeg"
+                      alt=""
+                      className="earbudsHero"
+                    />
+                  );
+                  setColorSolos("Rose Gold");
+                }}
+              ></span>
+              <span
+                className="dotsSolo"
+                onClick={() => {
+                  setHeadphonesHeroProduct(
+                    <img
+                      src="assets/product-img/beats18.1.jpeg"
+                      alt=""
+                      className="earbudsHero"
+                    />
+                  );
+                  setColorSolos("Citrus Red");
+                }}
+              ></span>
+            </div>
+          </div>
+          <div className="currentColor"> {colorSolos}</div>
+        </div>
+      </div>
+      <div className="productFooterInfo">
+        <div className="">
+          <sup>1</sup>Compatible hardware and software required. Works with
+          compatible content in supported apps. Not all content available in
+          Dolby Atmos.
+        </div>
+        <div className="">
+          <sup>2</sup>Testing conducted by Apple in April 2021 using
+          preproduction Beats Studio Buds and Charging Case units and software
+          paired with iPhone 11 Pro Max units and prerelease software. The
+          playlist consisted of 358 unique audio tracks purchased from the
+          iTunes Store (256-Kbps AAC encoding). Volume was set to 50% and Active
+          Noise Cancellation and Transparency were turned off. Testing consisted
+          of full Beats Studio Buds battery discharge while playing audio until
+          the first Beats Studio Buds stopped playback. With Active Noise
+          Cancellation turned on, listening time was up to 5 hours. Battery life
+          depends on device settings, environment, usage, and many other
+          factors.
+        </div>
+        <div className="">
+          <sup>3</sup>One-touch pairing requires iOS 14.6 or later.
+        </div>
+        <div className="">
+          <sup>4</sup>Fast Pair requires location enabled. Full access to
+          features requires an Android 6.0 or newer device with Google Play
+          Service enabled and Google Account.
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };
