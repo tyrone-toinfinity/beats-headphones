@@ -1,12 +1,12 @@
 import { Product, Footer, HeroBanner, Navbar } from "./index";
 
-export const Home = () => {
+export const Home = ({ scrollToNav, navRef }) => {
   return (
     <div>
-      <Navbar />
+      <Navbar navRef={navRef} />
       <HeroBanner />
       <Product />
-      <Footer />
+      <Footer scrollToNav={scrollToNav} />
     </div>
   );
 };

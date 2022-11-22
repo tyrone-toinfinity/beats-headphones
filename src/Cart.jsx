@@ -4,10 +4,10 @@ import "./Cart.css";
 import { Link } from "react-router-dom";
 import { Shop } from "./Shop";
 
-export const Cart = () => {
+export const Cart = ({ scrollToNav, navRef }) => {
   return (
     <section>
-      <Navbar />
+      <Navbar navRef={navRef} />
       <ShippingBanner />
       <div className="cartWrapper">
         <div className="cartContainer">
@@ -23,6 +23,7 @@ export const Cart = () => {
               popular products
             </Link>
             <Link to="/shop" className="cartProductsBtn">
+              <br />
               <button>shop all products</button>
             </Link>
           </div>
@@ -79,7 +80,7 @@ export const Cart = () => {
           </div>
         </aside>
       </div>
-      <Footer />
+      <Footer scrollToNav={scrollToNav} />
     </section>
   );
 };

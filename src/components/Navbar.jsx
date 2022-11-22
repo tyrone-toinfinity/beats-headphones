@@ -4,10 +4,10 @@ import { FaSearch, FaShoppingCart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
-export const Navbar = () => {
+export const Navbar = ({ navRef }) => {
   return (
     <nav>
-      <div className="desktop-nav">
+      <div className="desktop-nav" ref={navRef}>
         <div>
           <Link to="/">
             <img src="./beats-logo.svg" alt="logo" className="logo" />

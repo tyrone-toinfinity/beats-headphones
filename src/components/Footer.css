@@ -9,6 +9,7 @@
   align-items: center;
   font-size: 12px;
   line-height: 18px;
+  position: relative;
 }
 
 .legal-body {
@@ -18,4 +19,16 @@
 }
 .legal-copyright {
   margin-top: 3rem;
+}
+
+.topPage {
+  position: absolute;
+  bottom: 0;
+  right: -5rem;
+  font-size: 2rem;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid rgba(200, 200, 200, 0.9);
+  color: rgba(200, 200, 200, 0.7);
+  padding: 0.5rem;
 }

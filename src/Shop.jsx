@@ -2,10 +2,13 @@ import React from "react";
 import { useState, useRef } from "react";
 import { Navbar, ShippingBanner, Footer } from "./index";
 import "./Shop.css";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 
-export const Shop = () => {
+export const Shop = ({ scrollToNav, navRef }) => {
   const [color, setColor] = useState("Beats Black");
   const [colorSolos, setColorSolos] = useState("Matte Black");
+  const [colorStudio, setColorStudio] = useState("White");
   const [earbudsHeroProduct, setEarbudsHeroProduct] = useState(
     <img
       src="assets/product-img/beats04.1.jpeg"
@@ -21,6 +24,13 @@ export const Shop = () => {
       className="earbudsHero"
     />
   );
+  const [heroProductStudio, setHeroProductStudio] = useState(
+    <img
+      src="assets/product-img/beats05.1.jpeg"
+      alt=""
+      className="earbudsHero"
+    />
+  );
   const headphones = useRef();
   function handleClickHeadphones() {
     headphones.current.scrollIntoView({ behavior: "smooth" });
@@ -31,8 +41,7 @@ export const Shop = () => {
   }
   return (
     <div>
-      <Navbar />
-
+      <Navbar navRef={navRef} />
       <ShippingBanner />
       <div className="headphonesFilter">
         <div className="headphones">
@@ -42,11 +51,8 @@ export const Shop = () => {
             alt=""
             className="earbudIcon"
             onClick={handleClickEarbuds}
-            onDoubleClick={handleClickEarbuds}
           />
-          <p onClick={handleClickEarbuds} onDoubleClick={handleClickEarbuds}>
-            Earbuds
-          </p>
+          <p onClick={handleClickEarbuds}>Earbuds</p>
         </div>
 
         <div className="headphones">
@@ -55,17 +61,10 @@ export const Shop = () => {
             alt=""
             className="earbudIcon"
             onClick={handleClickHeadphones}
-            onDoubleClick={handleClickHeadphones}
           />
-          <p
-            onClick={handleClickHeadphones}
-            onDoubleClick={handleClickHeadphones}
-          >
-            Headphones
-          </p>
+          <p onClick={handleClickHeadphones}>Headphones</p>
         </div>
       </div>
-
       <h1 className="shopTitle" ref={earbuds}>
         WIRELESS EARBUDS
       </h1>
@@ -83,7 +82,7 @@ export const Shop = () => {
           </ul>
           <div className="earBudsColors">
             {" "}
-            <h6>4 Colors</h6>{" "}
+            <h6>7 Colors</h6>{" "}
             <div>
               <span
                 className="dots"
@@ -95,7 +94,6 @@ export const Shop = () => {
                       className="earbudsHero"
                     />
                   );
-
                   setColor("Beats Black");
                 }}
               ></span>
@@ -138,20 +136,83 @@ export const Shop = () => {
                   setColor("Stone Purple");
                 }}
               ></span>
+              <span
+                className="dots"
+                onClick={() => {
+                  setEarbudsHeroProduct(
+                    <img
+                      src="assets/product-img/beats04A.1.jpeg"
+                      alt=""
+                      className="earbudsHero"
+                    />
+                  );
+                  setColor("Moon");
+                }}
+              ></span>
+              <span
+                className="dots"
+                onClick={() => {
+                  setEarbudsHeroProduct(
+                    <img
+                      src="assets/product-img/beats04B.1.jpeg"
+                      alt=""
+                      className="earbudsHero"
+                    />
+                  );
+                  setColor("Dune");
+                }}
+              ></span>
+              <span
+                className="dots"
+                onClick={() => {
+                  setEarbudsHeroProduct(
+                    <img
+                      src="assets/product-img/beats04C.1.jpeg"
+                      alt=""
+                      className="earbudsHero"
+                    />
+                  );
+                  setColor("Earth");
+                }}
+              ></span>
             </div>
           </div>
           <div className="currentColor"> {color}</div>
         </div>
       </div>
+      {/* Poster */}
+      <div className="posterEarbuds">
+        <h1 className="posterEarbudsHeader">beats ˣ kim</h1>
+        <h3 className="posterEarbudsHeader2">Special Edition Beats Fit Pro</h3>
+        <button className="posterEarbudsBtn">shop</button>
+      </div>
+
+      <Card style={{ width: "20rem" }} className="posterCardEarbuds">
+        <Card.Img
+          variant="top"
+          src="./assets/product-img/earbudsPosterMobile.jpeg"
+          className="posterCardImg"
+        />
+        <Card.Body className="posterCardBody">
+          <Card.Title className="posterEarbudsHeader">beats ˣ kim</Card.Title>
+          <Card.Text className="posterEarbudsHeader2">
+            Special Edition Beats Fit Pro
+          </Card.Text>
+          <Button variant="" className="posterEarbudsBtn">
+            Shop
+          </Button>
+        </Card.Body>
+      </Card>
+
+      {/* Headphones */}
       <h1 className="shopTitle" ref={headphones}>
         WIRELESS HEADPHONES
       </h1>
-      <div className="earbudsWrapper">
+      <div className="headphonesWrapper">
         {headphonesHeroProduct}
         <div className="earBudsTextContainer">
-          <h5 className="newColors">new colors</h5>
           <h3 className="earBudsHeroTitle">
-            Beats Solo<sup>3</sup> <br />
+            Beats Solo³ <br />
             Wireless
           </h3>
           <h4 className="earBudsHeroPrice">$199.99</h4>
@@ -165,7 +226,7 @@ export const Shop = () => {
           </ul>
           <div className="earBudsColors">
             {" "}
-            <h6>4 Colors</h6>{" "}
+            <h6>3 Colors</h6>{" "}
             <div>
               <span
                 className="dotsSolo"
@@ -211,6 +272,70 @@ export const Shop = () => {
           <div className="currentColor"> {colorSolos}</div>
         </div>
       </div>
+      {/*Studio */}
+      <div className="headphonesWrapper">
+        {heroProductStudio}
+        <div className="earBudsTextContainer">
+          <h3 className="earBudsHeroTitle">
+            Beats Studio³ <br />
+            Wireless
+          </h3>
+          <h4 className="earBudsHeroPrice">$349.95</h4>
+          <ul className="earBudsFeatures">
+            <li>Ergonomic ear cups with on-ear controls</li>
+            <li>Active Noise Cancelling (ANC)</li>
+            <li>Up to 22 hours of listening time</li>
+            <li>Apple W1 chip & Class 1 Wireless Bluetooth®</li>
+          </ul>
+          <div className="earBudsColors">
+            {" "}
+            <h6>6 Colors</h6>{" "}
+            <div>
+              <span
+                className="dotsStudio"
+                onClick={() => {
+                  setHeroProductStudio(
+                    <img
+                      src="assets/product-img/beats05.1.jpeg"
+                      alt=""
+                      className="earbudsHero"
+                    />
+                  );
+                  setColorStudio("White");
+                }}
+              ></span>
+              <span
+                className="dotsStudio"
+                onClick={() => {
+                  setHeroProductStudio(
+                    <img
+                      src="assets/product-img/beats06.1.jpeg"
+                      alt=""
+                      className="earbudsHero"
+                    />
+                  );
+                  setColorStudio("Blue");
+                }}
+              ></span>
+              <span
+                className="dotsStudio"
+                onClick={() => {
+                  setHeroProductStudio(
+                    <img
+                      src="assets/product-img/beats07.1.jpeg"
+                      alt=""
+                      className="earbudsHero"
+                    />
+                  );
+                  setColorStudio("Matte Black");
+                }}
+              ></span>
+            </div>
+          </div>
+          <div className="currentColor"> {colorStudio}</div>
+        </div>
+      </div>
+      {/* Product Info */}
       <div className="productFooterInfo">
         <div className="">
           <sup>1</sup>Compatible hardware and software required. Works with
@@ -239,7 +364,7 @@ export const Shop = () => {
           Service enabled and Google Account.
         </div>
       </div>
-      <Footer />
+      <Footer scrollToNav={scrollToNav} />
     </div>
   );
 };

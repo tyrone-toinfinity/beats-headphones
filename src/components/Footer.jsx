@@ -1,9 +1,10 @@
 import React from "react";
 import "./Footer.css";
+import { FaChevronUp } from "react-icons/fa";
+import { useRef } from "react";
 
-export const Footer = () => {
+export const Footer = ({ scrollToNav }) => {
   const year = new Date().getFullYear();
-
   return (
     <div className="legal-container">
       <div className="legal-body">
@@ -39,6 +40,9 @@ export const Footer = () => {
         {" "}
         Copyright © {year} Apple Inc. - All rights reserved.
       </p>
+      <span className="topPage">
+        <FaChevronUp onClick={scrollToNav} />
+      </span>
     </div>
   );
 };
