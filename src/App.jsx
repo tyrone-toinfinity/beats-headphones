@@ -1,8 +1,10 @@
 import { Home } from "./Home";
 import { Shop } from "./Shop";
 import { Cart } from "./Cart";
+import { Support } from "./Support";
 import { useRef } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+
 export const App = () => {
   const navRef = useRef();
   const scrollToNav = () =>
@@ -21,6 +23,10 @@ export const App = () => {
         <Route
           path="/cart"
           element={<Cart navRef={navRef} scrollToNav={scrollToNav} />}
+        ></Route>
+        <Route
+          path="/support"
+          element={<Support navRef={navRef} scrollToNav={scrollToNav} />}
         ></Route>
       </Routes>
     </div>

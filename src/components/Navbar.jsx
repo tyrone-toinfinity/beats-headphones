@@ -14,13 +14,13 @@ export const Navbar = ({ navRef }) => {
           </Link>
         </div>
         <ul className="navbar">
-          <Link to="">
+          <Link to="/">
             <li>discover</li>
           </Link>
           <Link to="/shop">
             <li>shop</li>
           </Link>
-          <Link to="">
+          <Link to="/support">
             <li>support</li>
           </Link>
         </ul>

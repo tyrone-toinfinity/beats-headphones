@@ -90,9 +90,8 @@
 .earBudsHeroTitle {
   color: #161616;
   font-size: 1.9rem;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.16;
-  letter-spacing: -1px;
   margin: 0.33rem 0;
 }
 .earBudsHeroPrice {
@@ -179,7 +178,7 @@
 
 /* Poster */
 .posterEarbuds {
-  background-image: url("./assets/product-img/earbudsPoster.jpeg");
+  background-image: url("../public/assets/product-img/earbudsPoster.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 65rem;

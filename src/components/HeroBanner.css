@@ -1,4 +1,4 @@
-main {
+.hero-banner-container {
   width: 100%;
   height: 100%;
   background-color: #000;
@@ -7,7 +7,7 @@ main {
   position: relative;
 }
 
-main::after {
+.hero-banner-container::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -22,7 +22,7 @@ main::after {
     rgba(255, 255, 255, 0) 100%
   );
 }
-video {
+.heroVideo {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -40,7 +40,7 @@ video {
   position: relative;
   aspect-ratio: 16/9;
 }
-.contaienrText {
+.containerLandingText {
   position: absolute;
   color: white;
   left: 5%;
@@ -49,14 +49,14 @@ video {
   max-width: 1400px;
 }
 
-.contaienrText > h1 {
+.containerLandingText > h1 {
   font-size: 3.8rem;
   width: 70%;
   max-width: 600px;
   font-weight: 900;
 }
 
-.contaienrText > p {
+.containerLandingText > p {
   font-size: 1.4rem;
   width: 70%;
   font-weight: 700;
@@ -106,10 +106,10 @@ video {
 }
 
 @media (max-width: 700px) {
-  .contaienrText > h1 {
+  .containerLandingText > h1 {
     font-size: 1.8rem;
   }
-  .contaienrText > p {
+  .containerLandingText > p {
     font-size: 1.2rem;
   }
 }
