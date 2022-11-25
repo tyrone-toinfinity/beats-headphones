@@ -1,8 +1,9 @@
 import React from "react";
-import { Routes, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./HeroBanner.css";
 
 export const HeroBanner = () => {
+  const navigate = useNavigate();
   return (
     <main className="hero-banner-container">
       <div className="banner-wrapper">
@@ -13,17 +14,18 @@ export const HeroBanner = () => {
           muted
           className="heroVideo"
         />
-
         <div className="containerLandingText">
           <h1>LEBRON & BRONNY</h1>
           <p>Powered by Beats Fit Pro</p>
 
           <div className="btn-Hero">
-            <Link to="/shop">
-              <button className="btn-01" role="button">
-                shop
-              </button>
-            </Link>
+            <button
+              className="btn-01"
+              role="button"
+              onClick={() => navigate("/shop")}
+            >
+              shop
+            </button>
           </div>
         </div>
       </div>

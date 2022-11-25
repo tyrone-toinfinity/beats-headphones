@@ -1,4 +1,4 @@
-.desktop-nav {
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -7,13 +7,15 @@
   max-width: 1600px;
   margin: auto;
   align-items: center;
+  background-color: #fff;
 }
 
 .logo {
   width: 35px;
+  cursor: pointer;
 }
 
-.navbar {
+.navbar__List {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
@@ -25,8 +27,10 @@
   margin-bottom: 0;
 }
 .shoppingCart {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   position: relative;
+  cursor: pointer;
+  padding: 0.25rem;
 }
 .shoppingCart > p {
   color: #fff;
@@ -34,15 +38,15 @@
   border-radius: 50%;
   width: 1.25rem;
   height: 1.25rem;
-  display: block;
   position: absolute;
-  top: -0.125rem;
-  right: -0.625rem;
+  top: 2px;
+  right: -8px;
   line-height: 1.375rem;
   text-align: center;
   font-weight: 700;
   font-size: 0.7rem;
 }
+
 .cartLogo {
   color: #444;
 }
@@ -50,26 +54,31 @@
   color: #444;
 }
 
-.navbar > a {
+.navbar__List > li {
   padding: 0.2rem;
   text-decoration: none;
   color: #222;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
 
-.navbar > a:hover {
+.navbar__List > li:hover {
   border-bottom: 2px red solid;
 }
-.mobile-nav {
+.mobileNavHamburger {
   display: none;
 }
 .navbar__Mobile {
   display: none;
 }
 
-@media (max-width: 1400px) {
-  .desktop-nav {
+@media (max-width: 1080px) {
+  .navbar__List {
     display: none;
+  }
+  .navbar {
+    justify-content: space-between;
+    margin: 0.25rem 1rem;
   }
   .mobile-nav {
     display: flex;
@@ -79,7 +88,23 @@
     margin: 1rem 2rem;
   }
   .mobileNavHamburger {
+    display: inline-flex;
     font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .navbar__Mobile > li {
+    flex-direction: column;
+    border-top: #666 1px solid;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
   }
   .navbar__Mobile {
     display: flex;
@@ -87,21 +112,14 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    /* height: 100vh; */
-    /* transform: translateY(100vh); */
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: -100%;
   }
-  .navbar__Mobile > a {
-    flex-direction: column;
-    border: #777 1px solid;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 3rem;
-    font-size: 2rem;
-    text-decoration: none;
-    color: #222;
-    text-transform: uppercase;
-    font-weight: 700;
+  .navbar__show__Mobile {
+    top: auto;
   }
 }

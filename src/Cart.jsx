@@ -1,10 +1,11 @@
 import React from "react";
 import { Navbar, ShippingBanner, Footer } from "./index";
 import "./Cart.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Shop } from "./Shop";
 
 export const Cart = ({ scrollToNav, navRef }) => {
+  const navigate = useNavigate();
   return (
     <section>
       <Navbar navRef={navRef} />
@@ -14,18 +15,23 @@ export const Cart = ({ scrollToNav, navRef }) => {
           <h1 className="cartTitle">Your cart</h1>
 
           <div className="cartEmptyText">
-            Nothing's here yet! Explore our{" "}
-            <Link to="/shop" className="cartLink">
-              headsphones and earbuds,
-            </Link>{" "}
-            or our most{" "}
-            <Link to="/" className="cartLink">
+            <span> Nothing's here yet! Explore our </span>
+            <span className="cartLink" onClick={() => navigate("/shop")}>
+              headsphones and earbuds
+            </span>{" "}
+            , or our most
+            <span className="cartLink" onClick={() => navigate("/")}>
+              {" "}
               popular products
-            </Link>
-            <Link to="/shop" className="cartProductsBtn">
-              <br />
-              <button>shop all products</button>
-            </Link>
+            </span>
+            <br />
+            <button
+              onClick={() => navigate("/shop")}
+              className="cartProductsBtn"
+            >
+              {" "}
+              shop all products
+            </button>
           </div>
         </div>
 

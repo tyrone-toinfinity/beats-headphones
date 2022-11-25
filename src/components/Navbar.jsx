@@ -1,77 +1,58 @@
-import React from "react";
 import "./Navbar.css";
-import { FaSearch, FaShoppingCart, FaBars } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
-import { VscClose } from "react-icons/vsc";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
+import { Sling as Hamburger } from "hamburger-react";
+import { useState } from "react";
 
 export const Navbar = ({ navRef }) => {
   const navbarRef = useRef();
   const showNavbar = () => {
-    navbarRef.current.classList.toggle();
+    navbarRef.current.classList.toggle("navbar__show__Mobile");
   };
+  const navigate = useNavigate();
+  // Hamburger
+  const [isOpen, setOpen] = useState(false);
 
+  console.log(Hamburger);
   return (
     <nav>
-      <div className="desktop-nav" ref={navRef}>
-        <div>
-          <Link to="/">
-            <img src="./beats-logo.svg" alt="logo" className="logo" />
-          </Link>
-        </div>
-        <ul className="navbar">
-          <Link to="/">
-            <li>discover</li>
-          </Link>
-          <Link to="/shop">
-            <li>shop</li>
-          </Link>
-          <Link to="/support">
-            <li>support</li>
-          </Link>
-        </ul>
-        <div className="shoppingCart">
-          <Link to="/cart" className="cartLogo">
-            <FiShoppingCart />
-          </Link>
+      <div className="navbar" ref={navRef}>
+        <span className="mobileNavHamburger" onClick={showNavbar}>
+          {" "}
+          <Hamburger
+            toggled={isOpen}
+            toggle={setOpen}
+            color="#222"
+            label="Show menu"
+          />
+        </span>
 
+        <div>
+          <img
+            src="./beats-logo.svg"
+            alt="logo"
+            className="logo"
+            onClick={() => navigate("/")}
+          />
+        </div>
+        <ul className="navbar__List">
+          <li onClick={() => navigate("/")}>discover</li>
+          <li onClick={() => navigate("/shop")}>shop</li>
+          <li onClick={() => navigate("/support")}>support</li>
+        </ul>
+        <div className="shoppingCart" onClick={() => navigate("/cart")}>
+          <FiShoppingCart className="cartIcon" />
           <p>{0}</p>
         </div>
       </div>
-      <div className="mobileWrapper">
-        <div className="mobile-nav">
-          <FaBars className="mobileNavHamburger" onClick={showNavbar} />
-          <div>
-            <Link to="/">
-              <img src="./beats-logo.svg" alt="logo" className="logo" />
-            </Link>
-          </div>
-          <div>
-            <div className="shoppingCart">
-              <Link to="/cart" className="cartLogo">
-                <FiShoppingCart />
-              </Link>
-              <p>{0}</p>
-            </div>
-          </div>
-        </div>
-        <ul className="navbar__Mobile">
-          <button>
-            {" "}
-            <VscClose className="mobileNavClose" />
-          </button>
-          <Link to="/">
-            <li>discover</li>
-          </Link>
-          <Link to="/shop">
-            <li>shop</li>
-          </Link>
-          <Link to="/support">
-            <li>support</li>
-          </Link>
-        </ul>
-      </div>
+      {/* Mobile */}
+      <ul className="navbar__Mobile" ref={navbarRef}>
+        <li onClick={() => navigate("/")}>discover</li>
+        <li onClick={() => navigate("/shop")}>shop</li>
+        <li onClick={() => navigate("/support")}>support</li>
+      </ul>
     </nav>
   );
 };
