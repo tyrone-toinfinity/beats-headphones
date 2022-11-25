@@ -63,9 +63,45 @@
 .mobile-nav {
   display: none;
 }
+.navbar__Mobile {
+  display: none;
+}
 
-@media (max-width: 700px) {
+@media (max-width: 1400px) {
   .desktop-nav {
     display: none;
+  }
+  .mobile-nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 2rem;
+  }
+  .mobileNavHamburger {
+    font-size: 1.5rem;
+  }
+  .navbar__Mobile {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* height: 100vh; */
+    /* transform: translateY(100vh); */
+  }
+  .navbar__Mobile > a {
+    flex-direction: column;
+    border: #777 1px solid;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 700;
   }
 }
