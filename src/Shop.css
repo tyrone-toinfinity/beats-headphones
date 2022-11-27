@@ -262,7 +262,6 @@
   .posterEarbudsBtn:hover {
     background-color: #000;
   }
-
   .posterCardBody {
     background-color: #8b6944;
     padding: 2rem 1.5rem;
@@ -272,5 +271,17 @@
   }
   .posterEarbudsHeader2 {
     font-size: 1.2rem;
+  }
+  .headphonesWrapper {
+    flex-direction: column;
+    margin: 1.5rem;
+  }
+  .earbudsWrapper {
+    flex-direction: column;
+    margin: 1.5rem;
+  }
+  .earbudsHero {
+    width: 80%;
+    margin: auto;
   }
 }
