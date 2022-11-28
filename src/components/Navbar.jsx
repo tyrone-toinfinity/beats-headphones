@@ -1,5 +1,4 @@
 import "./Navbar.css";
-import { FaBars } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
@@ -14,8 +13,6 @@ export const Navbar = ({ navRef }) => {
   const navigate = useNavigate();
   // Hamburger
   const [isOpen, setOpen] = useState(false);
-
-  console.log(Hamburger);
   return (
     <nav>
       <div className="navbar" ref={navRef}>
