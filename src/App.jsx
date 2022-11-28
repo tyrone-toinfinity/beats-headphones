@@ -2,8 +2,9 @@ import { Home } from "./Home";
 import { Shop } from "./Shop";
 import { Cart } from "./Cart";
 import { Support } from "./Support";
+import { ErrorPage } from "./ErrorPage";
 import { useRef } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, redirect, Navigate } from "react-router-dom";
 
 export const App = () => {
   const navRef = useRef();
@@ -28,6 +29,11 @@ export const App = () => {
           path="/support"
           element={<Support navRef={navRef} scrollToNav={scrollToNav} />}
         ></Route>
+        <Route
+          path="404"
+          element={<ErrorPage navRef={navRef} scrollToNav={scrollToNav} />}
+        ></Route>
+        <Route path="*" element={<Navigate to="404" />}></Route>
       </Routes>
     </div>
   );
