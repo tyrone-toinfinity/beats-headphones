@@ -1,8 +1,7 @@
 .legal-container {
   color: #666;
   margin: 3rem auto;
-  margin-top: 10rem;
-  width: 60%;
+  max-width: 65rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -24,17 +23,23 @@
 .topPage {
   position: absolute;
   bottom: 0;
-  right: -5rem;
+  right: 50px;
   font-size: 2rem;
   background-color: #fff;
   border-radius: 50%;
   border: 1px solid rgba(200, 200, 200, 0.9);
   color: rgba(200, 200, 200, 0.7);
   padding: 0.5rem;
-  cursor: pointer;
 }
 @media (max-width: 1080px) {
-  .legal-container {
-    max-width: 50%;
+  .topPage {
+    right: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .topPage {
+    right: 20px;
+    bottom: 50px;
   }
 }

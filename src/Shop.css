@@ -47,6 +47,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 350px;
 }
 
 .earbudsHero {
@@ -163,8 +164,13 @@
   margin: 0.75rem 0;
   font-size: 1.3rem;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0rem;
 }
-
+.currentColor :first-child {
+  width: 150px;
+}
 /* Studio Color */
 .dotsStudio:first-child {
   background-color: #eee;
@@ -246,8 +252,52 @@
   display: none;
 }
 
+/* buy button */
+.button-15 {
+  background-image: linear-gradient(#42a1ec, #0070c9);
+  border: 1px solid #0077cc;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  /* direction: ltr; */
+  display: block;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  line-height: 1.47059;
+  min-width: 30px;
+  overflow: visible;
+  padding: 4px 15px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-15:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.button-15:hover {
+  background-image: linear-gradient(#51a9ee, #147bcd);
+  border-color: #1482d0;
+  text-decoration: none;
+}
+
+.button-15:active {
+  background-image: linear-gradient(#3d94d9, #0067b9);
+  border-color: #006dbc;
+  outline: none;
+}
+
+.button-15:focus {
+  box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+  outline: none;
+}
 /* mobile */
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .posterEarbuds {
     display: none;
   }
@@ -286,7 +336,16 @@
     margin: auto;
   }
   .productFooterInfo {
-    padding: 1;
     margin-bottom: 0;
+  }
+  .earBudsTextContainer {
+    margin: 1rem 2rem;
+    align-items: center;
+    width: 100%;
+  }
+  .currentColor {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
   }
 }

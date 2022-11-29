@@ -177,7 +177,13 @@ export const Shop = ({ scrollToNav, navRef }) => {
               ></span>
             </div>
           </div>
-          <div className="currentColor"> {color}</div>
+          <div className="currentColor">
+            <span> {color}</span>
+
+            <span>
+              <button className="button-15">Add to Bag</button>
+            </span>
+          </div>
         </div>
       </div>
       {/* Poster */}
@@ -204,10 +210,10 @@ export const Shop = ({ scrollToNav, navRef }) => {
         </Card.Body>
       </Card>
 
-      {/* Headphones */}
       <h1 className="shopTitle" ref={headphones}>
         WIRELESS HEADPHONES
       </h1>
+      {/* Solo */}
       <div className="headphonesWrapper">
         {headphonesHeroProduct}
         <div className="earBudsTextContainer">
@@ -218,10 +224,13 @@ export const Shop = ({ scrollToNav, navRef }) => {
           <h4 className="earBudsHeroPrice">$199.99</h4>
           <ul className="earBudsFeatures">
             <li>Adjustable fit with comfort-cushioned ear cups</li>
+
             <li>
               Fine-tuned acoustics for clarity and depth with noise isolation
             </li>
+
             <li>Up to 40 hours of listening time</li>
+
             <li>Apple W1 chip & Class 1 Wireless Bluetooth®</li>
           </ul>
           <div className="earBudsColors">
@@ -234,7 +243,7 @@ export const Shop = ({ scrollToNav, navRef }) => {
                   setHeadphonesHeroProduct(
                     <img
                       src="assets/product-img/beats17.1.jpeg"
-                      alt=""
+                      alt="solo headpones"
                       className="earbudsHero"
                     />
                   );
@@ -247,7 +256,7 @@ export const Shop = ({ scrollToNav, navRef }) => {
                   setHeadphonesHeroProduct(
                     <img
                       src="assets/product-img/beats16.1.jpeg"
-                      alt=""
+                      alt="solo headpones"
                       className="earbudsHero"
                     />
                   );
@@ -260,7 +269,7 @@ export const Shop = ({ scrollToNav, navRef }) => {
                   setHeadphonesHeroProduct(
                     <img
                       src="assets/product-img/beats18.1.jpeg"
-                      alt=""
+                      alt="solo headpones"
                       className="earbudsHero"
                     />
                   );
@@ -269,7 +278,12 @@ export const Shop = ({ scrollToNav, navRef }) => {
               ></span>
             </div>
           </div>
-          <div className="currentColor"> {colorSolos}</div>
+          <div className="currentColor">
+            <span>{colorSolos}</span>
+            <span>
+              <button className="button-15">Add to Bag</button>
+            </span>
+          </div>
         </div>
       </div>
       {/*Studio */}
@@ -283,13 +297,16 @@ export const Shop = ({ scrollToNav, navRef }) => {
           <h4 className="earBudsHeroPrice">$349.95</h4>
           <ul className="earBudsFeatures">
             <li>Ergonomic ear cups with on-ear controls</li>
+
             <li>Active Noise Cancelling (ANC)</li>
+
             <li>Up to 22 hours of listening time</li>
+
             <li>Apple W1 chip & Class 1 Wireless Bluetooth®</li>
           </ul>
           <div className="earBudsColors">
             {" "}
-            <h6>6 Colors</h6>{" "}
+            <h6>3 Colors</h6>{" "}
             <div>
               <span
                 className="dotsStudio"
@@ -297,7 +314,7 @@ export const Shop = ({ scrollToNav, navRef }) => {
                   setHeroProductStudio(
                     <img
                       src="assets/product-img/beats05.1.jpeg"
-                      alt=""
+                      alt="studio headphones"
                       className="earbudsHero"
                     />
                   );
@@ -310,7 +327,7 @@ export const Shop = ({ scrollToNav, navRef }) => {
                   setHeroProductStudio(
                     <img
                       src="assets/product-img/beats06.1.jpeg"
-                      alt=""
+                      alt="studio headphones"
                       className="earbudsHero"
                     />
                   );
@@ -323,7 +340,7 @@ export const Shop = ({ scrollToNav, navRef }) => {
                   setHeroProductStudio(
                     <img
                       src="assets/product-img/beats07.1.jpeg"
-                      alt=""
+                      alt="studio headphones"
                       className="earbudsHero"
                     />
                   );
@@ -332,7 +349,12 @@ export const Shop = ({ scrollToNav, navRef }) => {
               ></span>
             </div>
           </div>
-          <div className="currentColor"> {colorStudio}</div>
+          <div className="currentColor">
+            <span> {colorStudio}</span>
+            <span>
+              <button className="button-15">Add to Bag</button>
+            </span>
+          </div>
         </div>
       </div>
       {/* Product Info */}
