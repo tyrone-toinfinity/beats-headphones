@@ -1,7 +1,6 @@
 .supportContainer {
   max-width: 70rem;
   margin: 7rem auto;
-  border: red 1px solid;
 }
 .supportHeader {
   font-weight: 900;
@@ -10,4 +9,47 @@
   text-transform: uppercase;
   /* Todo fix font */
   font-size: calc(60px + (90 - 76) * ((100vw - 1024px) / (1440 - 1024)));
+}
+
+.support__links {
+  display: flex;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+.support__card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.support__img {
+  width: 100%;
+}
+
+.support__card > figure {
+  position: relative;
+  cursor: pointer;
+}
+
+.support__card > figure > figcaption {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.support__options > li {
+  list-style: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 20px;
+  margin: 0.8rem 0;
+}
+
+.support__line {
+  border: 1px solid #999;
 }
