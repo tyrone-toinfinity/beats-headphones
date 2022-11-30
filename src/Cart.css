@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: 1fr 24.375rem;
   gap: 2.5rem;
+  min-height: 100vh;
 }
 
 .cartContainer {
