@@ -20,7 +20,7 @@ export const ErrorPage = ({ scrollToNav, navRef }) => {
         <div className="error__sitemap">
           <div className="sitemap__option">
             <img
-              src="public/assets/logos/error-products.svg"
+              src="assets/logos/error-products.svg"
               alt="back to products page icon"
             />
             <h3>Products that inspire</h3>
@@ -39,7 +39,7 @@ export const ErrorPage = ({ scrollToNav, navRef }) => {
           </div>
           <div className="sitemap__option">
             <img
-              src="public/assets/logos/error-email.svg"
+              src="assets/logos/error-email.svg"
               alt="email mailing list icon"
             />
             <h3>Hear it first</h3>
@@ -57,7 +57,7 @@ export const ErrorPage = ({ scrollToNav, navRef }) => {
           </div>
           <div className="sitemap__option">
             <img
-              src="public/assets/logos/error-download-app.svg"
+              src="assets/logos/error-download-app.svg"
               alt="download mobile app icon"
             />
             <h3>You're in control</h3>
@@ -75,7 +75,7 @@ export const ErrorPage = ({ scrollToNav, navRef }) => {
           </div>
           <div className="sitemap__option">
             <img
-              src="public/assets/logos/error-register.svg"
+              src="assets/logos/error-register.svg"
               alt="product registration icon"
             />
             <h3>Product registration</h3>
