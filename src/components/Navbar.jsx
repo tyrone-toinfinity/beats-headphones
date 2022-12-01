@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import { Sling as Hamburger } from "hamburger-react";
+import { Sling } from "hamburger-react";
 import { FiShoppingCart } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import { useRef, useState } from "react";
@@ -17,7 +17,7 @@ export const Navbar = ({ navRef }) => {
       <div className="navbar" ref={navRef}>
         <span className="mobileNavHamburger" onClick={showNavbar}>
           {" "}
-          <Hamburger
+          <Sling
             toggled={isOpen}
             toggle={setOpen}
             color="#222"
