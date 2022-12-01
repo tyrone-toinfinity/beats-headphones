@@ -53,3 +53,16 @@
 .support__line {
   border: 1px solid #999;
 }
+
+@media (max-width: 800px) {
+  .support__links {
+    flex-direction: column;
+  }
+  .support__img {
+    height: 400px;
+  }
+  .support__card {
+    justify-content: center;
+    align-items: center;
+  }
+}
