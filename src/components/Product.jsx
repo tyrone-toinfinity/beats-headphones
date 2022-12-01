@@ -1,8 +1,6 @@
-import React from "react";
 import products from "../products.json";
 import { Cards } from "./Cards";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 import "./Product.css";
 

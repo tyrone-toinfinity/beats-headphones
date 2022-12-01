@@ -327,7 +327,8 @@
     flex-direction: column;
     margin: 1.5rem;
   }
-  .earbudsWrapper {
+  .earbudsWrapper,
+  .headphonesWrapper {
     flex-direction: column;
     margin: 1.5rem;
     justify-content: center;

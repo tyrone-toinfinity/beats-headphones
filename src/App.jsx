@@ -4,7 +4,7 @@ import { Cart } from "./Cart";
 import { Support } from "./Support";
 import { ErrorPage } from "./ErrorPage";
 import { useRef } from "react";
-import { Route, Routes, redirect, Navigate } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 
 export const App = () => {
   const navRef = useRef();

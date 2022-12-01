@@ -1,9 +1,9 @@
-import React from "react";
 import { useState, useRef } from "react";
 import { Navbar, ShippingBanner, Footer } from "./index";
-import "./Shop.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+
+import "./Shop.css";
 
 export const Shop = ({ scrollToNav, navRef }) => {
   const [color, setColor] = useState("Beats Black");

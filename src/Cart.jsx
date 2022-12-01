@@ -1,8 +1,6 @@
-import React from "react";
 import { Navbar, ShippingBanner, Footer } from "./index";
+import { useNavigate } from "react-router-dom";
 import "./Cart.css";
-import { Link, useNavigate } from "react-router-dom";
-import { Shop } from "./Shop";
 
 export const Cart = ({ scrollToNav, navRef }) => {
   const navigate = useNavigate();

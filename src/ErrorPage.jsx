@@ -1,8 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { Footer, Navbar } from "./index";
 import { FaArrowRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
-
 import "./ErrorPage.css";
 
 export const ErrorPage = ({ scrollToNav, navRef }) => {

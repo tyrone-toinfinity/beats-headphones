@@ -1,7 +1,5 @@
-import React from "react";
-import "./Footer.css";
 import { FaChevronUp } from "react-icons/fa";
-import { useRef } from "react";
+import "./Footer.css";
 
 export const Footer = ({ scrollToNav }) => {
   const year = new Date().getFullYear();
