@@ -36,6 +36,9 @@
   .topPage {
     right: 50px;
   }
+  .legal-container {
+    margin: 1rem 5rem;
+  }
 }
 
 @media (max-width: 500px) {

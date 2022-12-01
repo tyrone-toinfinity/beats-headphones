@@ -237,7 +237,7 @@
 }
 /* Footer product info */
 .productFooterInfo {
-  margin: 8rem auto;
+  margin: 4rem auto;
   max-width: 70rem;
   display: flex;
   flex-direction: column;
@@ -259,7 +259,6 @@
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
-  /* direction: ltr; */
   display: block;
   font-size: 17px;
   font-weight: 400;
@@ -297,6 +296,11 @@
   outline: none;
 }
 /* mobile */
+@media (max-width: 1080px) {
+  .productFooterInfo {
+    margin: 4rem 2rem;
+  }
+}
 @media (max-width: 850px) {
   .posterEarbuds {
     display: none;
@@ -337,9 +341,6 @@
   .earbudsHero {
     width: 80%;
     margin: auto;
-  }
-  .productFooterInfo {
-    margin-bottom: 0;
   }
   .earBudsTextContainer {
     margin: 1rem 2rem;

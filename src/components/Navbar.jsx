@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import { Sling } from "hamburger-react";
+import { Twirl as Hamburger } from "hamburger-react";
 import { FiShoppingCart } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import { useRef, useState } from "react";
@@ -17,11 +17,12 @@ export const Navbar = ({ navRef }) => {
       <div className="navbar" ref={navRef}>
         <span className="mobileNavHamburger" onClick={showNavbar}>
           {" "}
-          <Sling
+          <Hamburger
             toggled={isOpen}
             toggle={setOpen}
             color="#222"
             label="Show menu"
+            duration={0.3}
           />
         </span>
 
