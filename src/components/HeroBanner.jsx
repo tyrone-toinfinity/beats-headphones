@@ -11,6 +11,7 @@ export const HeroBanner = () => {
           src="./assets/videos/beats-video.mp4"
           autoPlay
           loop
+          playsinline
           muted
           className="heroVideo"
         />
