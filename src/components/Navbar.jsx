@@ -1,9 +1,8 @@
 import "./Navbar.css";
+import { Sling as Hamburger } from "hamburger-react";
 import { FiShoppingCart } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
-import { useRef } from "react";
-import { Sling as Hamburger } from "hamburger-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 export const Navbar = ({ navRef }) => {
   const navbarRef = useRef();
