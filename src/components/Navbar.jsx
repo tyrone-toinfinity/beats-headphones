@@ -17,13 +17,13 @@ export const Navbar = ({ navRef }) => {
       <div className="navbar" ref={navRef}>
         <span className="mobileNavHamburger" onClick={showNavbar}>
           {" "}
-          <Hamburger
+          {/* <Hamburger
             toggled={isOpen}
             toggle={setOpen}
             color="#222"
             label="Show menu"
             duration={0.3}
-          />
+          /> */}
         </span>
 
         <div>
