@@ -120,6 +120,6 @@
     top: -100%;
   }
   .navbar__show__Mobile {
-    top: 8%;
+    top: auto;
   }
 }
