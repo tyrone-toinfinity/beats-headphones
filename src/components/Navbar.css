@@ -74,7 +74,7 @@
 
 @media (max-width: 1080px) {
   .navbar__List {
-    /* display: none; */
+    display: none;
   }
   .navbar {
     justify-content: space-between;
@@ -106,7 +106,7 @@
     font-weight: 700;
     cursor: pointer;
   }
-  .navbar__Mobile {
+  .navbar__show__Mobile {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -118,8 +118,7 @@
     position: absolute;
     /* z-index: 10; */
     top: -100%;
-  }
-  .navbar__show__Mobile {
     top: auto;
+    background-color: aqua;
   }
 }
