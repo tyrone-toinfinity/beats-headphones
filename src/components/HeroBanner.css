@@ -28,6 +28,7 @@
   max-width: 1400px;
   margin: auto;
   align-self: center;
+  /* z-index: -1; */
 }
 .banner-wrapper {
   width: 100%;

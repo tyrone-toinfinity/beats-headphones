@@ -71,8 +71,14 @@
 .navbar__Mobile {
   display: none;
 }
+.hamburger-react {
+  display: none;
+}
 
 @media (max-width: 1080px) {
+  .hamburger-react {
+    display: block;
+  }
   .navbar__List {
     display: none;
   }

@@ -6,8 +6,8 @@ export const HeroBanner = () => {
   return (
     <main className="hero-banner-container">
       <div className="banner-wrapper">
-        <video playsInline loop muted autoPlay className="heroVideo">
-          <source src="./assets/videos/beats-video.mp4" type="vide/mp4" />
+        <video playsinline loop muted autoPlay className="heroVideo">
+          <source src="./assets/videos/beats-video.mp4" type="video/mp4" />
         </video>
         <div className="containerLandingText">
           <h1>LEBRON & BRONNY</h1>
