@@ -6,34 +6,29 @@ import { useRef, useState } from "react";
 
 export const Navbar = ({ navRef }) => {
   const navbarRef = useRef();
-  const showNavbar = () => {
-    navbarRef.current.classList.toggle("navbar__show__Mobile");
-  };
+
   const navigate = useNavigate();
   // Hamburger
-  const [isOpen, setOpen] = useState(false);
+
   return (
     <nav>
       <div className="navbar" ref={navRef}>
-        <span className="mobileNavHamburger" onClick={showNavbar}>
-          {" "}
-          <Hamburger
-            // toggled={isOpen}
-            // toggle={setOpen}
-            color="#222"
-            label="Show menu"
-            duration={0.3}
-            onToggle={(toggled) => {
-              if (toggled) {
-                // open a menu
-                navbarRef.current.classList.remove("navbar__show__Mobile");
-              } else {
-                // close a menu
-                navbarRef.current.classList.add("navbar__show__Mobile");
-              }
-            }}
-          />
-        </span>
+        <Hamburger
+          // toggled={isOpen}
+          // toggle={setOpen}
+          color="#222"
+          label="Show menu"
+          duration={0.3}
+          onToggle={(toggled) => {
+            if (toggled) {
+              // open a menu
+              navbarRef.current.classList.add("navbar__show__Mobile");
+            } else {
+              // close a menu
+              navbarRef.current.classList.remove("navbar__show__Mobile");
+            }
+          }}
+        />
 
         <div>
           <img

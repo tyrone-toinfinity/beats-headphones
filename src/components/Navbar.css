@@ -90,6 +90,7 @@
   .mobileNavHamburger {
     display: inline-flex;
     font-size: 1.5rem;
+    background-color: aqua;
     cursor: pointer;
   }
 
