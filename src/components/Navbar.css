@@ -72,7 +72,7 @@
   display: none;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 200px) {
   .navbar__List {
     display: none;
   }

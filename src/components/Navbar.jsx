@@ -46,7 +46,7 @@ export const Navbar = ({ navRef }) => {
         </div>
       </div>
       {/* Mobile */}
-      <ul className="navbar__Mobile">
+      <ul className="navbar__Mobile" ref={navbarRef}>
         <li onClick={() => navigate("/")}>discover</li>
         <li onClick={() => navigate("/shop")}>shop</li>
         <li onClick={() => navigate("/support")}>support</li>
