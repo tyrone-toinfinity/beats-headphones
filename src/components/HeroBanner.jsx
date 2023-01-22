@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 
 export const HeroBanner = () => {
   const navigate = useNavigate();
-
   const isMobile = /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
 
   return (
