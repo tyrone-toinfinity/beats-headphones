@@ -18,7 +18,6 @@ export const Navbar = ({ navRef }) => {
         <span className="mobileNavHamburger" onClick={showNavbar}>
           {" "}
           <Hamburger
-            toggled={isOpen}
             toggle={setOpen}
             color="#222"
             label="Show menu"
