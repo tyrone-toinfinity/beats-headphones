@@ -14,8 +14,6 @@ export const Navbar = ({ navRef }) => {
     <nav>
       <div className="navbar" ref={navRef}>
         <Hamburger
-          // toggled={isOpen}
-          // toggle={setOpen}
           color="#222"
           label="Show menu"
           duration={0.3}
@@ -29,7 +27,6 @@ export const Navbar = ({ navRef }) => {
             }
           }}
         />
-
         <div>
           <img
             src="./beats-logo.svg"
@@ -49,7 +46,7 @@ export const Navbar = ({ navRef }) => {
         </div>
       </div>
       {/* Mobile */}
-      <ul className="navbar__Mobile" ref={navbarRef}>
+      <ul className="navbar__Mobile">
         <li onClick={() => navigate("/")}>discover</li>
         <li onClick={() => navigate("/shop")}>shop</li>
         <li onClick={() => navigate("/support")}>support</li>
