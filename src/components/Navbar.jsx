@@ -18,10 +18,20 @@ export const Navbar = ({ navRef }) => {
         <span className="mobileNavHamburger" onClick={showNavbar}>
           {" "}
           <Hamburger
-            toggle={setOpen}
+            // toggled={isOpen}
+            // toggle={setOpen}
             color="#222"
             label="Show menu"
             duration={0.3}
+            onToggle={(toggled) => {
+              if (toggled) {
+                // open a menu
+                navbarRef.current.classList.remove("navbar__show__Mobile");
+              } else {
+                // close a menu
+                navbarRef.current.classList.add("navbar__show__Mobile");
+              }
+            }}
           />
         </span>
 
