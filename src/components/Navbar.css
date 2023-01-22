@@ -101,10 +101,13 @@
     justify-content: center;
     text-align: center;
     font-size: 2rem;
-    color: #222;
+    color: #333;
     text-transform: uppercase;
     font-weight: 700;
     cursor: pointer;
+  }
+  .navbar__Mobile > li:last-child {
+    border-bottom: #666 1px solid;
   }
   .navbar__show__Mobile {
     display: flex;
@@ -113,11 +116,11 @@
     padding: 0;
     margin: 0;
     background-color: #fff;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: absolute;
     z-index: 10;
-    top: -100%;
     top: auto;
+    overflow: hidden;
   }
 }
