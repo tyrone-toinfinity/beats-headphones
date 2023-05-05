@@ -2,7 +2,7 @@ import "./Navbar.css";
 import { Twirl as Hamburger } from "hamburger-react";
 import { FiShoppingCart } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 export const Navbar = ({ navRef }) => {
   const navbarRef = useRef();
@@ -27,6 +27,7 @@ export const Navbar = ({ navRef }) => {
             }
           }}
         />
+
         <div>
           <img
             src="./beats-logo.svg"

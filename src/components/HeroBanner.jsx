@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import "./HeroBanner.css";
-import { useEffect, useRef } from "react";
 
 export const HeroBanner = () => {
   const navigate = useNavigate();
@@ -17,6 +16,11 @@ export const HeroBanner = () => {
           className="heroVideo"
         >
           <source src="./assets/videos/beats-video.mp4" type="video/mp4" />
+          <p>
+            Your browser doesn't support HTML5 video. Here is a{" "}
+            <a href="./assets/videos/beats-video.mp4">link to the video</a>{" "}
+            instead.
+          </p>
         </video>
 
         <div className="containerLandingText">
