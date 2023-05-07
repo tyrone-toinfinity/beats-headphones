@@ -3,13 +3,38 @@ import { Shop } from "./Shop";
 import { Cart } from "./Cart";
 import { Support } from "./Support";
 import { ErrorPage } from "./ErrorPage";
-import { useRef } from "react";
-import { Route, Routes, Navigate } from "react-router-dom";
+import { useEffect, useRef } from "react";
+import { Route, Routes, Navigate, useLocation } from "react-router-dom";
 
 export const App = () => {
   const navRef = useRef();
   const scrollToNav = () =>
     navRef.current.scrollIntoView({ behavior: "smooth" });
+
+  const { pathname } = useLocation();
+  console.log(pathname);
+  useEffect(() => {
+    let title;
+    switch (pathname) {
+      case "/shop":
+        title = "Wireless Headphones and Earbuds - Beats";
+        break;
+      case "/cart":
+        title = "Beats by Dre - Cart";
+        break;
+      case "/support":
+        title = "Beats Support - Beats by Dre";
+        break;
+      case "/404":
+        title = "Page Not Found (404) - Beats";
+        break;
+      default:
+        title = "Beats by Dre";
+        break;
+    }
+    document.title = title;
+  }, [pathname]);
+
   return (
     <div>
       <Routes>
