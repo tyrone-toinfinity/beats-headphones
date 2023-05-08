@@ -181,7 +181,7 @@ export const Shop = ({ scrollToNav, navRef }) => {
             <span> {color}</span>
 
             <span>
-              <button className="button-15">Add to Bag</button>
+              <button className="button-28">View Details</button>
             </span>
           </div>
         </div>
@@ -281,7 +281,7 @@ export const Shop = ({ scrollToNav, navRef }) => {
           <div className="currentColor">
             <span>{colorSolos}</span>
             <span>
-              <button className="button-15">Add to Bag</button>
+              <button className="button-28">View Details</button>
             </span>
           </div>
         </div>
@@ -352,7 +352,7 @@ export const Shop = ({ scrollToNav, navRef }) => {
           <div className="currentColor">
             <span> {colorStudio}</span>
             <span>
-              <button className="button-15">Add to Bag</button>
+              <button className="button-28">View Details</button>
             </span>
           </div>
         </div>
