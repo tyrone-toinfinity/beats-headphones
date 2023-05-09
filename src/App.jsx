@@ -58,6 +58,11 @@ export const App = () => {
           path="404"
           element={<ErrorPage navRef={navRef} scrollToNav={scrollToNav} />}
         ></Route>
+        <Route
+          path="/shop/:urlName"
+          element={<Shop navRef={navRef} scrollToNav={scrollToNav} />}
+        />
+
         <Route path="*" element={<Navigate to="404" />}></Route>
       </Routes>
     </div>

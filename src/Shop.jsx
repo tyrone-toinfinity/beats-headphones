@@ -3,7 +3,11 @@ import { Navbar, ShippingBanner, Footer } from "./index";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
+import { useParams } from "react-router-dom";
+
 import "./Shop.css";
+
+import products from "./products.json";
 
 export const Shop = ({ scrollToNav, navRef }) => {
   const [color, setColor] = useState("Beats Black");
@@ -39,10 +43,17 @@ export const Shop = ({ scrollToNav, navRef }) => {
   function handleClickEarbuds() {
     earbuds.current.scrollIntoView({ behavior: "smooth" });
   }
+
+  const { urlName } = useParams();
+
+  // find the product in the JSON data using the urlName
+  // const product = headphones.find((p) => p.urlName === urlName);
+
   return (
     <div>
       <Navbar navRef={navRef} />
       <ShippingBanner />
+
       <div className="headphonesFilter">
         <div className="headphones">
           {" "}
@@ -81,107 +92,38 @@ export const Shop = ({ scrollToNav, navRef }) => {
             <li>Auto Play/Pause connection via Apple H1 chip</li>
           </ul>
           <div className="earBudsColors">
-            {" "}
-            <h6>7 Colors</h6>{" "}
+            <h6>7 Colors</h6>
             <div>
-              <span
-                className="dots"
-                onClick={() => {
-                  setEarbudsHeroProduct(
-                    <img
-                      src="assets/product-img/beats04.1.jpeg"
-                      alt=""
-                      className="earbudsHero"
-                    />
-                  );
-                  setColor("Beats Black");
-                }}
-              ></span>
-              <span
-                className="dots"
-                onClick={() => {
-                  setEarbudsHeroProduct(
-                    <img
-                      src="assets/product-img/beats01.1.jpeg"
-                      alt=""
-                      className="earbudsHero"
-                    />
-                  );
-                  setColor("Beats White");
-                }}
-              ></span>
-              <span
-                className="dots"
-                onClick={() => {
-                  setEarbudsHeroProduct(
-                    <img
-                      src="assets/product-img/beats03.1.jpeg"
-                      alt=""
-                      className="earbudsHero"
-                    />
-                  );
-                  setColor("Sage Gray");
-                }}
-              ></span>
-              <span
-                className="dots"
-                onClick={() => {
-                  setEarbudsHeroProduct(
-                    <img
-                      src="assets/product-img/beats02.1.jpeg"
-                      alt=""
-                      className="earbudsHero"
-                    />
-                  );
-                  setColor("Stone Purple");
-                }}
-              ></span>
-              <span
-                className="dots"
-                onClick={() => {
-                  setEarbudsHeroProduct(
-                    <img
-                      src="assets/product-img/beats04A.1.jpeg"
-                      alt=""
-                      className="earbudsHero"
-                    />
-                  );
-                  setColor("Moon");
-                }}
-              ></span>
-              <span
-                className="dots"
-                onClick={() => {
-                  setEarbudsHeroProduct(
-                    <img
-                      src="assets/product-img/beats04B.1.jpeg"
-                      alt=""
-                      className="earbudsHero"
-                    />
-                  );
-                  setColor("Dune");
-                }}
-              ></span>
-              <span
-                className="dots"
-                onClick={() => {
-                  setEarbudsHeroProduct(
-                    <img
-                      src="assets/product-img/beats04C.1.jpeg"
-                      alt=""
-                      className="earbudsHero"
-                    />
-                  );
-                  setColor("Earth");
-                }}
-              ></span>
+              {products.headpones
+                .filter((product) => product.urlName === "beats-fit-pro")
+                .map((product) => (
+                  <span
+                    key={product.id}
+                    className="dots"
+                    onClick={() => {
+                      setEarbudsHeroProduct(
+                        <img src={product.image} className="earbudsHero" />
+                      );
+                      setColor(
+                        product.color.charAt(0).toUpperCase() +
+                          product.color.slice(1)
+                      );
+                    }}
+                  ></span>
+                ))}
             </div>
           </div>
+
           <div className="currentColor">
-            <span> {color}</span>
+            <span>{color}</span>
 
             <span>
-              <button className="button-28">View Details</button>
+              <button
+                className="button-28"
+                onClick={() => console.log(products)}
+              >
+                View Details
+              </button>
             </span>
           </div>
         </div>

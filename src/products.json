@@ -3,6 +3,7 @@
     {
       "id": "1",
       "@type": "earbuds",
+      "urlName": "beats-fit-pro",
       "name": "Beats Fit Pro",
       "image": "assets/product-img/beats01.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
@@ -26,12 +27,14 @@
     {
       "id": "2",
       "@type": "earbuds",
+      "urlName": "beats-fit-pro",
       "name": "Beats Fit Pro",
       "image": "assets/product-img/beats02.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "stone purple",
       "brand": {
         "@type": "Brand",
+
         "name": "Beats"
       },
       "offers": {
@@ -49,12 +52,14 @@
     {
       "id": "3",
       "@type": "earbuds",
+      "urlName": "beats-fit-pro",
       "name": "Beats Fit Pro",
       "image": "assets/product-img/beats03.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "sage gray",
       "brand": {
         "@type": "Brand",
+
         "name": "Beats"
       },
       "offers": {
@@ -72,12 +77,14 @@
     {
       "id": "4",
       "@type": "earbuds",
+      "urlName": "beats-fit-pro",
       "name": "Beats Fit Pro",
       "image": "assets/product-img/beats04.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "black",
       "brand": {
         "@type": "Brand",
+
         "name": "Beats"
       },
       "offers": {
@@ -95,12 +102,14 @@
     {
       "id": "5",
       "@type": "headphones",
+      "urlName": "beats-studio",
       "name": "Beats Studio³",
       "image": "assets/product-img/beats05.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "white",
       "brand": {
         "@type": "Brand",
+
         "name": "Beats"
       },
       "offers": {
@@ -118,12 +127,14 @@
     {
       "id": "6",
       "@type": "headphones",
+      "urlName": "beats-studio",
       "name": "Beats Studio³",
       "image": "assets/product-img/beats06.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "stone purple",
       "brand": {
         "@type": "Brand",
+
         "name": "Beats"
       },
       "offers": {
@@ -141,12 +152,14 @@
     {
       "id": "7",
       "@type": "headphones",
+      "urlName": "beats-studio",
       "name": "Beats Studio³",
       "image": "assets/product-img/beats06.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "sage gray",
       "brand": {
         "@type": "Brand",
+
         "name": "Beats"
       },
       "offers": {
@@ -164,12 +177,14 @@
     {
       "id": "8",
       "@type": "headphones",
+      "urlName": "beats-studio",
       "name": "Beats Studio³",
       "image": "assets/product-img/beats08.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "black",
       "brand": {
         "@type": "Brand",
+
         "name": "Beats"
       },
       "offers": {
@@ -187,12 +202,14 @@
     {
       "id": "9",
       "@type": "headphones",
+      "urlName": "beats-studio",
       "name": "Beats Studio³",
       "image": "assets/product-img/beats09.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "white",
       "brand": {
         "@type": "Brand",
+
         "name": "Beats"
       },
       "offers": {
@@ -210,12 +227,14 @@
     {
       "id": "10",
       "@type": "headphones",
+      "urlName": "beats-studio",
       "name": "Beats Studio³",
       "image": "assets/product-img/beats10.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "stone purple",
       "brand": {
         "@type": "Brand",
+
         "name": "Beats"
       },
       "offers": {
@@ -233,12 +252,14 @@
     {
       "id": "11",
       "@type": "headphones",
+      "urlName": "beats-studio",
       "name": "Beats Studio³",
       "image": "assets/product-img/beats11.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "sage gray",
       "brand": {
         "@type": "Brand",
+
         "name": "Beats"
       },
       "offers": {
@@ -256,12 +277,14 @@
     {
       "id": "12",
       "@type": "earbuds",
+      "urlName": "beats-flex",
       "name": "Beats Flex",
       "image": "assets/product-img/beats12.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "black",
       "brand": {
         "@type": "Brand",
+
         "name": "Beats"
       },
       "offers": {
@@ -279,12 +302,14 @@
     {
       "id": "13",
       "@type": "earbuds",
+      "urlName": "beats-flex",
       "name": "Beats Flex",
       "image": "assets/product-img/beats13.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "white",
       "brand": {
         "@type": "Brand",
+
         "name": "Beats"
       },
       "offers": {
@@ -302,12 +327,14 @@
     {
       "id": "14",
       "@type": "earbuds",
+      "urlName": "beats-flex",
       "name": "Beats Flex",
       "image": "assets/product-img/beats14.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "stone purple",
       "brand": {
         "@type": "Brand",
+
         "name": "Beats"
       },
       "offers": {
@@ -325,12 +352,14 @@
     {
       "id": "15",
       "@type": "earbuds",
+      "urlName": "beats-flex",
       "name": "Beats Flex",
       "image": "assets/product-img/beats15.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "sage gray",
       "brand": {
         "@type": "Brand",
+
         "name": "Beats"
       },
       "offers": {
@@ -348,12 +377,14 @@
     {
       "id": "16",
       "@type": "headphones",
+      "urlName": "beats-solo",
       "name": "Beats Solo³ Wireless",
       "image": "assets/product-img/beats16.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "black",
       "brand": {
         "@type": "Brand",
+
         "name": "Beats"
       },
       "offers": {
@@ -371,12 +402,14 @@
     {
       "id": "17",
       "@type": "headphones",
+      "urlName": "beats-solo",
       "name": "Beats Solo³ Wireless",
       "image": "assets/product-img/beats17.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "black",
       "brand": {
         "@type": "Brand",
+
         "name": "Beats"
       },
       "offers": {
@@ -394,6 +427,7 @@
     {
       "id": "18",
       "@type": "headphones",
+      "urlName": "beats-solo",
       "name": "Beats Solo³ Wireless",
       "image": "assets/product-img/beats18.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
