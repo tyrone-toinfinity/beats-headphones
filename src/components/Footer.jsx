@@ -8,10 +8,11 @@ export const Footer = () => {
       <div className="legal-body">
         <p>
           <sup>1</sup>&nbsp;Offer available 9/26/22 - 11/24/22 at{" "}
-          <a>www.apple.com</a> and U.S. Apple retail stores. Available online
-          until 11:59:59 p.m. P.T., 11/24/22. While supplies last. Excludes
-          taxes. Not valid with any other Beats offer. $199.95 for Powerbeats
-          Pro in Black, Ivory, and Navy.
+          <a href="http://www.apple.com">Apple </a>
+          and U.S. Apple retail stores. Available online until 11:59:59 p.m.
+          P.T., 11/24/22. While supplies last. Excludes taxes. Not valid with
+          any other Beats offer. $199.95 for Powerbeats Pro in Black, Ivory, and
+          Navy.
         </p>
         <p>
           <sup>2</sup>&nbsp;Beats Fit Pro engraving available for the following
@@ -23,8 +24,8 @@ export const Footer = () => {
           device running iOS 15 or iPadOS 15 or later. Offer good for 3 months
           after eligible device pairing. No audio product purchase necessary for
           current owners of eligible devices. Plan automatically renews at your
-          regions price per month until cancelled. Restrictions and{" "}
-          <a>other terms</a> apply.
+          regions price per month until cancelled. Restrictions and other terms
+          apply.
         </p>
         <p>
           <sup>4</sup>&nbsp;Works with compatible Beats headphones. Find My

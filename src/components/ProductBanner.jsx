@@ -57,7 +57,7 @@ export const ProductBanner = () => {
                 Enjoy free two-day delivery on most in-stock items.
               </Card.Text>
               <Card.Text className="learnMore">
-                <a href="https://www.apple.com/shop/help/shipping_delivery">
+                <a href="https://.com/shop/help/shipping_delivery">
                   Shipping and delivery
                 </a>{" "}
               </Card.Text>
