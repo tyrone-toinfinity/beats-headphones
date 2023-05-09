@@ -124,10 +124,17 @@
   border: rgba(200, 200, 200, 0.7) 2px solid;
 }
 .dots,
-.dotsSolo,
-.dotsStudio:active {
-  border: rgba(100, 100, 100, 1) 2px solid;
+.dotsSolo {
+  cursor: pointer;
 }
+
+.dots:target,
+.dots:focus,
+.dots:selected {
+  border: rgb(24, 217, 69) 2px solid;
+  outline: none;
+}
+
 .dots:first-child {
   background-color: #ebebeb;
 }
@@ -152,10 +159,10 @@
 
 /* Solos Color */
 .dotsSolo:first-child {
-  background-color: #000;
+  background-color: #cb9995;
 }
 .dotsSolo:nth-child(2) {
-  background-color: #cb9995;
+  background-color: #000;
 }
 .dotsSolo:nth-child(3) {
   background-color: #ce2617;

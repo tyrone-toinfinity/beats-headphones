@@ -429,7 +429,7 @@
         "assets/product-img/beats16.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
-      "color": "black",
+      "color": "Rose Gold",
       "brand": {
         "@type": "Brand",
 
@@ -485,7 +485,7 @@
         "assets/product-img/beats18.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
-      "color": "black",
+      "color": "Citrus Red",
       "brand": {
         "@type": "Brand",
         "name": "Beats"

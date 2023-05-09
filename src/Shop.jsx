@@ -11,27 +11,27 @@ import products from "./products.json";
 
 export const Shop = () => {
   const [color, setColor] = useState("Black");
-  const [colorSolos, setColorSolos] = useState("Matte Black");
+  const [colorSolos, setColorSolos] = useState("Rose Gold");
   const [colorStudio, setColorStudio] = useState("White");
   const [earbudsHeroProduct, setEarbudsHeroProduct] = useState(
     <img
       src="assets/product-img/beats04.1.webp"
-      alt=""
+      alt="beats headphones"
       className="earbudsHero"
     />
   );
 
   const [headphonesHeroProduct, setHeadphonesHeroProduct] = useState(
     <img
-      src="assets/product-img/beats17.1.webp"
-      alt=""
+      src="assets/product-img/beats16.1.webp"
+      alt="beats earbuds"
       className="earbudsHero"
     />
   );
   const [heroProductStudio, setHeroProductStudio] = useState(
     <img
       src="assets/product-img/beats05.1.webp"
-      alt=""
+      alt="beats earbuds"
       className="earbudsHero"
     />
   );
@@ -55,7 +55,6 @@ export const Shop = () => {
   return (
     <div>
       <ShippingBanner />
-
       <div className="headphonesFilter">
         <div className="headphones">
           {" "}
@@ -84,9 +83,9 @@ export const Shop = () => {
       <div className="earbudsWrapper">
         {earbudsHeroProduct}
         <div className="earBudsTextContainer">
-          <h5 className="newColors">new colors</h5>
-          <h3 className="earBudsHeroTitle">Beats Fit Pro</h3>
-          <h4 className="earBudsHeroPrice">$199.99</h4>
+          <p className="newColors">new colors</p>
+          <p className="earBudsHeroTitle">Beats Fit Pro</p>
+          <p className="earBudsHeroPrice">$199.99</p>
           <ul className="earBudsFeatures">
             <li>Flexible, secure-fit wingtips</li>
             <li>Active Noise Cancelling (ANC) and Transparency mode</li>
@@ -161,65 +160,49 @@ export const Shop = () => {
       <div className="headphonesWrapper">
         {headphonesHeroProduct}
         <div className="earBudsTextContainer">
-          <h3 className="earBudsHeroTitle">
+          <p className="earBudsHeroTitle">
             Beats Solo³ <br />
             Wireless
-          </h3>
-          <h4 className="earBudsHeroPrice">$199.99</h4>
+          </p>
+          <p className="earBudsHeroPrice">$199.99</p>
           <ul className="earBudsFeatures">
             <li>Adjustable fit with comfort-cushioned ear cups</li>
-
             <li>
               Fine-tuned acoustics for clarity and depth with noise isolation
             </li>
-
             <li>Up to 40 hours of listening time</li>
-
             <li>Apple W1 chip & Class 1 Wireless Bluetooth®</li>
           </ul>
           <div className="earBudsColors">
             {" "}
-            <h6>3 Colors</h6>{" "}
+            <h6>
+              {products.headpones.filter(
+                (products) => products.urlName === "beats-solo"
+              ).length + " "}
+              Colors
+            </h6>
             <div>
-              <span
-                className="dotsSolo"
-                onClick={() => {
-                  setHeadphonesHeroProduct(
-                    <img
-                      src="assets/product-img/beats17.1.webp"
-                      alt="solo headpones"
-                      className="earbudsHero"
-                    />
-                  );
-                  setColorSolos("Matte Black");
-                }}
-              ></span>
-              <span
-                className="dotsSolo"
-                onClick={() => {
-                  setHeadphonesHeroProduct(
-                    <img
-                      src="assets/product-img/beats16.1.webp"
-                      alt="solo headpones"
-                      className="earbudsHero"
-                    />
-                  );
-                  setColorSolos("Rose Gold");
-                }}
-              ></span>
-              <span
-                className="dotsSolo"
-                onClick={() => {
-                  setHeadphonesHeroProduct(
-                    <img
-                      src="assets/product-img/beats18.1.webp"
-                      alt="solo headpones"
-                      className="earbudsHero"
-                    />
-                  );
-                  setColorSolos("Citrus Red");
-                }}
-              ></span>
+              {products.headpones
+                .filter((product) => product.urlName === "beats-solo")
+                .map((product) => (
+                  <span
+                    key={product.id}
+                    className="dotsSolo"
+                    onClick={() => {
+                      setHeadphonesHeroProduct(
+                        <img
+                          src={product.image[0]}
+                          alt="Solo Headphones"
+                          className="earbudsHero"
+                        />
+                      );
+                      setColorSolos(
+                        product.color.charAt(0).toUpperCase() +
+                          product.color.slice(1)
+                      );
+                    }}
+                  ></span>
+                ))}
             </div>
           </div>
           <div className="currentColor">
