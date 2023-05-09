@@ -10,7 +10,7 @@ import "./Shop.css";
 import products from "./products.json";
 
 export const Shop = ({ scrollToNav, navRef }) => {
-  const [color, setColor] = useState("Beats Black");
+  const [color, setColor] = useState("Black");
   const [colorSolos, setColorSolos] = useState("Matte Black");
   const [colorStudio, setColorStudio] = useState("White");
   const [earbudsHeroProduct, setEarbudsHeroProduct] = useState(
@@ -92,7 +92,12 @@ export const Shop = ({ scrollToNav, navRef }) => {
             <li>Auto Play/Pause connection via Apple H1 chip</li>
           </ul>
           <div className="earBudsColors">
-            <h6>7 Colors</h6>
+            <h6>
+              {products.headpones.filter(
+                (products) => products.urlName === "beats-fit-pro"
+              ).length + " "}
+              Colors
+            </h6>
             <div>
               {products.headpones
                 .filter((product) => product.urlName === "beats-fit-pro")
@@ -104,6 +109,9 @@ export const Shop = ({ scrollToNav, navRef }) => {
                       setEarbudsHeroProduct(
                         <img src={product.image} className="earbudsHero" />
                       );
+                      {
+                        console.log(product.image);
+                      }
                       setColor(
                         product.color.charAt(0).toUpperCase() +
                           product.color.slice(1)
@@ -118,12 +126,7 @@ export const Shop = ({ scrollToNav, navRef }) => {
             <span>{color}</span>
 
             <span>
-              <button
-                className="button-28"
-                onClick={() => console.log(products)}
-              >
-                View Details
-              </button>
+              <button className="button-28">View Details</button>
             </span>
           </div>
         </div>

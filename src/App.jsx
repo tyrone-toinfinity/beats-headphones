@@ -12,7 +12,6 @@ export const App = () => {
     navRef.current.scrollIntoView({ behavior: "smooth" });
 
   const { pathname } = useLocation();
-  console.log(pathname);
   useEffect(() => {
     let title;
     switch (pathname) {

@@ -129,16 +129,16 @@
   border: rgba(100, 100, 100, 1) 2px solid;
 }
 .dots:first-child {
-  background-color: #000;
+  background-color: #ebebeb;
 }
 .dots:nth-child(2) {
-  background-color: #ebebeb;
+  background-color: #e4ccee;
 }
 .dots:nth-child(3) {
   background-color: #6c6c6d;
 }
 .dots:nth-child(4) {
-  background-color: #e4ccee;
+  background-color: #000;
 }
 .dots:nth-child(5) {
   background-color: #ecd1c4;
