@@ -6,8 +6,8 @@
       "urlName": "beats-fit-pro",
       "name": "Beats Fit Pro",
       "image": [
-        "assets/product-img/beats01.1.jpeg",
-        "assets/product-img/beats01.jpeg"
+        "assets/product-img/beats01.1.webp",
+        "assets/product-img/beats01.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "white",
@@ -33,8 +33,8 @@
       "urlName": "beats-fit-pro",
       "name": "Beats Fit Pro",
       "image": [
-        "assets/product-img/beats02.1.jpeg",
-        "assets/product-img/beats02.jpeg"
+        "assets/product-img/beats02.1.webp",
+        "assets/product-img/beats02.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "stone purple",
@@ -61,8 +61,8 @@
       "urlName": "beats-fit-pro",
       "name": "Beats Fit Pro",
       "image": [
-        "assets/product-img/beats03.1.jpeg",
-        "assets/product-img/beats03.jpeg"
+        "assets/product-img/beats03.1.webp",
+        "assets/product-img/beats03.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "sage gray",
@@ -89,8 +89,8 @@
       "urlName": "beats-fit-pro",
       "name": "Beats Fit Pro",
       "image": [
-        "assets/product-img/beats04.1.jpeg",
-        "assets/product-img/beats04.jpeg"
+        "assets/product-img/beats04.1.webp",
+        "assets/product-img/beats04.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "black",
@@ -117,8 +117,8 @@
       "urlName": "beats-studio",
       "name": "Beats Studio³",
       "image": [
-        "assets/product-img/beats05.1.jpeg",
-        "assets/product-img/beats05.jpeg"
+        "assets/product-img/beats05.1.webp",
+        "assets/product-img/beats05.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "white",
@@ -145,8 +145,8 @@
       "urlName": "beats-studio",
       "name": "Beats Studio³",
       "image": [
-        "assets/product-img/beats06.1.jpeg",
-        "assets/product-img/beats06.jpeg"
+        "assets/product-img/beats06.1.webp",
+        "assets/product-img/beats06.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "stone purple",
@@ -173,8 +173,8 @@
       "urlName": "beats-studio",
       "name": "Beats Studio³",
       "image": [
-        "assets/product-img/beats07.1.jpeg",
-        "assets/product-img/beats07.jpeg"
+        "assets/product-img/beats07.1.webp",
+        "assets/product-img/beats07.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "sage gray",
@@ -201,8 +201,8 @@
       "urlName": "beats-studio",
       "name": "Beats Studio³",
       "image": [
-        "assets/product-img/beats08.1.jpeg",
-        "assets/product-img/beats08.jpeg"
+        "assets/product-img/beats08.1.webp",
+        "assets/product-img/beats08.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "black",
@@ -229,8 +229,8 @@
       "urlName": "beats-studio",
       "name": "Beats Studio³",
       "image": [
-        "assets/product-img/beats09.1.jpeg",
-        "assets/product-img/beats09.jpeg"
+        "assets/product-img/beats09.1.webp",
+        "assets/product-img/beats09.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "white",
@@ -257,8 +257,8 @@
       "urlName": "beats-studio",
       "name": "Beats Studio³",
       "image": [
-        "assets/product-img/beats10.1.jpeg",
-        "assets/product-img/beats10.jpeg"
+        "assets/product-img/beats10.1.webp",
+        "assets/product-img/beats10.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "stone purple",
@@ -285,8 +285,8 @@
       "urlName": "beats-studio",
       "name": "Beats Studio³",
       "image": [
-        "assets/product-img/beats11.1.jpeg",
-        "assets/product-img/beats11.jpeg"
+        "assets/product-img/beats11.1.webp",
+        "assets/product-img/beats11.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "sage gray",
@@ -313,8 +313,8 @@
       "urlName": "beats-flex",
       "name": "Beats Flex",
       "image": [
-        "assets/product-img/beats12.1.jpeg",
-        "assets/product-img/beats12.jpeg"
+        "assets/product-img/beats12.1.webp",
+        "assets/product-img/beats12.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "black",
@@ -341,8 +341,8 @@
       "urlName": "beats-flex",
       "name": "Beats Flex",
       "image": [
-        "assets/product-img/beats13.1.jpeg",
-        "assets/product-img/beats13.jpeg"
+        "assets/product-img/beats13.1.webp",
+        "assets/product-img/beats13.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "white",
@@ -369,8 +369,8 @@
       "urlName": "beats-flex",
       "name": "Beats Flex",
       "image": [
-        "assets/product-img/beats14.1.jpeg",
-        "assets/product-img/beats14.jpeg"
+        "assets/product-img/beats14.1.webp",
+        "assets/product-img/beats14.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "stone purple",
@@ -397,8 +397,8 @@
       "urlName": "beats-flex",
       "name": "Beats Flex",
       "image": [
-        "assets/product-img/beats15.1.jpeg",
-        "assets/product-img/beats15.jpeg"
+        "assets/product-img/beats15.1.webp",
+        "assets/product-img/beats15.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "sage gray",
@@ -425,8 +425,8 @@
       "urlName": "beats-solo",
       "name": "Beats Solo³ Wireless",
       "image": [
-        "assets/product-img/beats16.1.jpeg",
-        "assets/product-img/beats16.jpeg"
+        "assets/product-img/beats16.1.webp",
+        "assets/product-img/beats16.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "black",
@@ -453,8 +453,8 @@
       "urlName": "beats-solo",
       "name": "Beats Solo³ Wireless",
       "image": [
-        "assets/product-img/beats17.1.jpeg",
-        "assets/product-img/beats17.jpeg"
+        "assets/product-img/beats17.1.webp",
+        "assets/product-img/beats17.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "black",
@@ -481,8 +481,8 @@
       "urlName": "beats-solo",
       "name": "Beats Solo³ Wireless",
       "image": [
-        "assets/product-img/beats18.1.jpeg",
-        "assets/product-img/beats18.jpeg"
+        "assets/product-img/beats18.1.webp",
+        "assets/product-img/beats18.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "black",

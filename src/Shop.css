@@ -184,7 +184,7 @@
 
 /* Poster */
 .posterEarbuds {
-  background-image: url("../public/assets/product-img/earbudsPoster.jpeg");
+  background-image: url("../public/assets/product-img/earbudsPoster.webp");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 65rem;

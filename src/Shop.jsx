@@ -15,7 +15,7 @@ export const Shop = () => {
   const [colorStudio, setColorStudio] = useState("White");
   const [earbudsHeroProduct, setEarbudsHeroProduct] = useState(
     <img
-      src="assets/product-img/beats04.1.jpeg"
+      src="assets/product-img/beats04.1.webp"
       alt=""
       className="earbudsHero"
     />
@@ -23,14 +23,14 @@ export const Shop = () => {
 
   const [headphonesHeroProduct, setHeadphonesHeroProduct] = useState(
     <img
-      src="assets/product-img/beats17.1.jpeg"
+      src="assets/product-img/beats17.1.webp"
       alt=""
       className="earbudsHero"
     />
   );
   const [heroProductStudio, setHeroProductStudio] = useState(
     <img
-      src="assets/product-img/beats05.1.jpeg"
+      src="assets/product-img/beats05.1.webp"
       alt=""
       className="earbudsHero"
     />
@@ -140,7 +140,7 @@ export const Shop = () => {
       <Card style={{ width: "20rem" }} className="posterCardEarbuds">
         <Card.Img
           variant="top"
-          src="./assets/product-img/earbudsPosterMobile.jpeg"
+          src="./assets/product-img/earbudsPosterMobile.webp"
           className="posterCardImg"
         />
         <Card.Body className="posterCardBody">
@@ -186,7 +186,7 @@ export const Shop = () => {
                 onClick={() => {
                   setHeadphonesHeroProduct(
                     <img
-                      src="assets/product-img/beats17.1.jpeg"
+                      src="assets/product-img/beats17.1.webp"
                       alt="solo headpones"
                       className="earbudsHero"
                     />
@@ -199,7 +199,7 @@ export const Shop = () => {
                 onClick={() => {
                   setHeadphonesHeroProduct(
                     <img
-                      src="assets/product-img/beats16.1.jpeg"
+                      src="assets/product-img/beats16.1.webp"
                       alt="solo headpones"
                       className="earbudsHero"
                     />
@@ -212,7 +212,7 @@ export const Shop = () => {
                 onClick={() => {
                   setHeadphonesHeroProduct(
                     <img
-                      src="assets/product-img/beats18.1.jpeg"
+                      src="assets/product-img/beats18.1.webp"
                       alt="solo headpones"
                       className="earbudsHero"
                     />
@@ -257,7 +257,7 @@ export const Shop = () => {
                 onClick={() => {
                   setHeroProductStudio(
                     <img
-                      src="assets/product-img/beats05.1.jpeg"
+                      src="assets/product-img/beats05.1.webp"
                       alt="studio headphones"
                       className="earbudsHero"
                     />
@@ -270,7 +270,7 @@ export const Shop = () => {
                 onClick={() => {
                   setHeroProductStudio(
                     <img
-                      src="assets/product-img/beats06.1.jpeg"
+                      src="assets/product-img/beats06.1.webp"
                       alt="studio headphones"
                       className="earbudsHero"
                     />
@@ -283,7 +283,7 @@ export const Shop = () => {
                 onClick={() => {
                   setHeroProductStudio(
                     <img
-                      src="assets/product-img/beats07.1.jpeg"
+                      src="assets/product-img/beats07.1.webp"
                       alt="studio headphones"
                       className="earbudsHero"
                     />
