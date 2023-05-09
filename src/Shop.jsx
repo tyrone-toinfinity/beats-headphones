@@ -36,10 +36,13 @@ export const Shop = () => {
     />
   );
   const headphones = useRef();
+
   function handleClickHeadphones() {
     headphones.current.scrollIntoView({ behavior: "smooth" });
   }
+
   const earbuds = useRef();
+
   function handleClickEarbuds() {
     earbuds.current.scrollIntoView({ behavior: "smooth" });
   }
@@ -106,11 +109,8 @@ export const Shop = () => {
                     className="dots"
                     onClick={() => {
                       setEarbudsHeroProduct(
-                        <img src={product.image} className="earbudsHero" />
+                        <img src={product.image[0]} className="earbudsHero" />
                       );
-                      {
-                        console.log(product.image);
-                      }
                       setColor(
                         product.color.charAt(0).toUpperCase() +
                           product.color.slice(1)

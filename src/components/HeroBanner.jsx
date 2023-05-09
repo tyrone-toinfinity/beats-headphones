@@ -31,7 +31,7 @@ export const HeroBanner = () => {
             <button
               className="btn-01"
               role="button"
-              onClick={() => navigate("/shop")}
+              onClick={() => navigate("/products")}
             >
               shop
             </button>

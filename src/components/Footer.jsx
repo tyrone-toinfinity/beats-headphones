@@ -3,6 +3,12 @@ import "./Footer.css";
 
 export const Footer = () => {
   const year = new Date().getFullYear();
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="legal-container">
       <div className="legal-body">
@@ -39,7 +45,7 @@ export const Footer = () => {
         {" "}
         Copyright © {year} Apple Inc. - All rights reserved.
       </p>
-      <span className="topPage">
+      <span className="topPage" onClick={scrollToTop}>
         <FaChevronUp />
       </span>
     </div>

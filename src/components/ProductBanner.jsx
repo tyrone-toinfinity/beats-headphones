@@ -69,7 +69,7 @@ export const ProductBanner = () => {
               <Card.Img
                 variant="top"
                 src={"./assets/logos/pickup.svg"}
-                className="shoppingImg "
+                className="shoppingImg"
                 alt="pickup logo"
               />
               <Card.Title className="shoppingHeader">
