@@ -32,10 +32,6 @@ export const Product = () => {
           <div className="container-xl ">
             <h2 className="product-title">Popular Now</h2>
             <div className="row justify-content-center gap-2 ">
-              {/* {items.headpones.map((item) => (
-              <Cards key={item.id} products={item} className="" />
-            ))} */}
-
               <Cards products={items.headpones[1]} />
               <Cards products={items.headpones[17]} />
               <Cards products={items.headpones[11]} />
@@ -53,6 +49,7 @@ export const Product = () => {
                 variant="top"
                 src={"./assets/logos/delivery.svg"}
                 className="shoppingImg "
+                alt="delievery logo"
               />
               <Card.Title className="shoppingHeader">
                 Fast, Free Delivery
@@ -74,6 +71,7 @@ export const Product = () => {
                 variant="top"
                 src={"./assets/logos/pickup.svg"}
                 className="shoppingImg "
+                alt="pickup logo"
               />
               <Card.Title className="shoppingHeader">
                 In-Store Pickup
@@ -95,6 +93,7 @@ export const Product = () => {
                 variant="top"
                 src={"./assets/logos/return.svg"}
                 className="shoppingImg"
+                alt="return logo"
               />
               <Card.Title className="shoppingHeader">
                 Extended Holiday Returns
