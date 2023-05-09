@@ -2,9 +2,9 @@ import products from "../products.json";
 import { Cards } from "./Cards";
 import { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
-import "./Product.css";
+import "./ProductBanner.css";
 
-export const Product = () => {
+export const ProductBanner = () => {
   const [error, setError] = useState(null);
   const [isloaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
@@ -15,7 +15,6 @@ export const Product = () => {
       setItems(products);
       setIsLoaded(true);
     } catch {
-      console.log("there was an error");
       setIsLoaded(true);
       setError(error);
     }

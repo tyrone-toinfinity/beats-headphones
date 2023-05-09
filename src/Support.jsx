@@ -1,12 +1,11 @@
 import { useNavigate } from "react-router-dom";
-import { Footer, HeroBanner, Navbar } from "./index";
+import { HeroBanner } from "./index";
 import "./Support.css";
 
-export const Support = ({ navRef, scrollToNav }) => {
+export const Support = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <Navbar navRef={navRef} />
       <main className="supportContainer">
         {" "}
         <h1 className="supportHeader">beats support</h1>
@@ -63,8 +62,6 @@ export const Support = ({ navRef, scrollToNav }) => {
         </div>
       </main>
       <hr className="support__line" />
-
-      <Footer scrollToNav={scrollToNav} />
     </div>
   );
 };

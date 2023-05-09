@@ -1,12 +1,10 @@
-import { Product, Footer, HeroBanner, Navbar } from "./index";
+import { HeroBanner, ProductBanner } from "./index";
 
-export const Home = ({ scrollToNav, navRef }) => {
+export const Home = () => {
   return (
     <div>
-      <Navbar navRef={navRef} />
       <HeroBanner />
-      <Product />
-      <Footer scrollToNav={scrollToNav} />
+      <ProductBanner />
     </div>
   );
 };

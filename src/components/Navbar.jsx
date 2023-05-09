@@ -6,7 +6,6 @@ import { useRef } from "react";
 
 export const Navbar = ({ navRef }) => {
   const navbarRef = useRef();
-
   const navigate = useNavigate();
   // Hamburger
 
@@ -38,7 +37,7 @@ export const Navbar = ({ navRef }) => {
         </div>
         <ul className="navbar__List">
           <li onClick={() => navigate("/")}>discover</li>
-          <li onClick={() => navigate("/shop")}>shop</li>
+          <li onClick={() => navigate("/products")}>shop</li>
           <li onClick={() => navigate("/support")}>support</li>
         </ul>
         <div className="shoppingCart" onClick={() => navigate("/cart")}>
@@ -49,7 +48,7 @@ export const Navbar = ({ navRef }) => {
       {/* Mobile */}
       <ul className="navbar__Mobile" ref={navbarRef}>
         <li onClick={() => navigate("/")}>discover</li>
-        <li onClick={() => navigate("/shop")}>shop</li>
+        <li onClick={() => navigate("/products")}>shop</li>
         <li onClick={() => navigate("/support")}>support</li>
       </ul>
     </nav>

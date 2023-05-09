@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { Navbar, ShippingBanner, Footer } from "./index";
+import { ShippingBanner } from "./index";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
@@ -9,7 +9,7 @@ import "./Shop.css";
 
 import products from "./products.json";
 
-export const Shop = ({ scrollToNav, navRef }) => {
+export const Shop = () => {
   const [color, setColor] = useState("Black");
   const [colorSolos, setColorSolos] = useState("Matte Black");
   const [colorStudio, setColorStudio] = useState("White");
@@ -51,7 +51,6 @@ export const Shop = ({ scrollToNav, navRef }) => {
 
   return (
     <div>
-      <Navbar navRef={navRef} />
       <ShippingBanner />
 
       <div className="headphonesFilter">
@@ -331,7 +330,6 @@ export const Shop = ({ scrollToNav, navRef }) => {
           Service enabled and Google Account.
         </div>
       </div>
-      <Footer scrollToNav={scrollToNav} />
     </div>
   );
 };

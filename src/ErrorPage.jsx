@@ -1,15 +1,11 @@
 import { useNavigate } from "react-router-dom";
-import { Footer, Navbar } from "./index";
 import { FaArrowRight } from "react-icons/fa";
 import "./ErrorPage.css";
 
-export const ErrorPage = ({ scrollToNav, navRef }) => {
+export const ErrorPage = () => {
   const navigate = useNavigate();
-
   return (
     <div>
-      <Navbar navRef={navRef} />
-
       <main className="error__page">
         <div className="header__error">
           <h1>404</h1>
@@ -98,7 +94,6 @@ export const ErrorPage = ({ scrollToNav, navRef }) => {
           Support
         </button>
       </div>
-      <Footer scrollToNav={scrollToNav} />
     </div>
   );
 };

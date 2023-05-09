@@ -2,11 +2,10 @@ import { Navbar, ShippingBanner, Footer } from "./index";
 import { useNavigate } from "react-router-dom";
 import "./Cart.css";
 
-export const Cart = ({ scrollToNav, navRef }) => {
+export const Cart = () => {
   const navigate = useNavigate();
   return (
     <section>
-      <Navbar navRef={navRef} />
       <ShippingBanner />
       <div className="cartWrapper">
         <div className="cartContainer">
@@ -84,7 +83,6 @@ export const Cart = ({ scrollToNav, navRef }) => {
           </div>
         </aside>
       </div>
-      <Footer scrollToNav={scrollToNav} />
     </section>
   );
 };
