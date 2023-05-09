@@ -59,7 +59,7 @@ export const Product = () => {
               </Card.Text>
               <Card.Text className="learnMore">
                 <a href="https://www.apple.com/shop/help/shipping_delivery">
-                  Learn More
+                  Shipping and delivery
                 </a>{" "}
               </Card.Text>
             </Card>
@@ -81,7 +81,7 @@ export const Product = () => {
               </Card.Text>
               <Card.Text className="learnMore">
                 <a href="https://www.apple.com/shop/help/shipping_delivery#pickup">
-                  Learn More
+                  In Store Pick Up
                 </a>{" "}
               </Card.Text>
             </Card>
@@ -103,7 +103,7 @@ export const Product = () => {
               </Card.Text>
               <Card.Text className="learnMore">
                 <a href="https://www.apple.com/shop/help/returns_refund#policy?cid=beats_wb_hmp_holidaypromo_us_na_na">
-                  Learn More
+                  How To Return
                 </a>{" "}
               </Card.Text>
             </Card>
