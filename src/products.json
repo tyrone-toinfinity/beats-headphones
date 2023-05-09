@@ -5,7 +5,7 @@
       "@type": "earbuds",
       "urlName": "beats-fit-pro",
       "name": "Beats Fit Pro",
-      "image": "assets/product-img/beats01.jpeg",
+      "image": "assets/product-img/beats01.1.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "white",
       "brand": {
@@ -29,7 +29,7 @@
       "@type": "earbuds",
       "urlName": "beats-fit-pro",
       "name": "Beats Fit Pro",
-      "image": "assets/product-img/beats02.jpeg",
+      "image": "assets/product-img/beats02.1.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "stone purple",
       "brand": {
@@ -54,7 +54,7 @@
       "@type": "earbuds",
       "urlName": "beats-fit-pro",
       "name": "Beats Fit Pro",
-      "image": "assets/product-img/beats03.jpeg",
+      "image": "assets/product-img/beats03.1.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "sage gray",
       "brand": {
@@ -79,7 +79,7 @@
       "@type": "earbuds",
       "urlName": "beats-fit-pro",
       "name": "Beats Fit Pro",
-      "image": "assets/product-img/beats04.jpeg",
+      "image": "assets/product-img/beats04.1.jpeg",
       "description": "True Wireless Noise Cancelling Earbuds",
       "color": "black",
       "brand": {
