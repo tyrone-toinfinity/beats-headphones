@@ -149,7 +149,7 @@
         "assets/product-img/beats06.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
-      "color": "stone purple",
+      "color": "Blue",
       "brand": {
         "@type": "Brand",
 
@@ -177,35 +177,7 @@
         "assets/product-img/beats07.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
-      "color": "sage gray",
-      "brand": {
-        "@type": "Brand",
-
-        "name": "Beats"
-      },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "price": "349.95"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "",
-        "ratingCount": "",
-        "reviewCount": ""
-      }
-    },
-    {
-      "id": "8",
-      "@type": "headphones",
-      "urlName": "beats-studio",
-      "name": "Beats Studio³",
-      "image": [
-        "assets/product-img/beats08.1.webp",
-        "assets/product-img/beats08.webp"
-      ],
-      "description": "True Wireless Noise Cancelling Earbuds",
-      "color": "black",
+      "color": "Matte Black",
       "brand": {
         "@type": "Brand",
 
@@ -233,35 +205,7 @@
         "assets/product-img/beats09.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
-      "color": "white",
-      "brand": {
-        "@type": "Brand",
-
-        "name": "Beats"
-      },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "price": "349.95"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "",
-        "ratingCount": "",
-        "reviewCount": ""
-      }
-    },
-    {
-      "id": "10",
-      "@type": "headphones",
-      "urlName": "beats-studio",
-      "name": "Beats Studio³",
-      "image": [
-        "assets/product-img/beats10.1.webp",
-        "assets/product-img/beats10.webp"
-      ],
-      "description": "True Wireless Noise Cancelling Earbuds",
-      "color": "stone purple",
+      "color": "Red",
       "brand": {
         "@type": "Brand",
 
@@ -289,7 +233,7 @@
         "assets/product-img/beats11.webp"
       ],
       "description": "True Wireless Noise Cancelling Earbuds",
-      "color": "sage gray",
+      "color": "Shadow Gray",
       "brand": {
         "@type": "Brand",
 

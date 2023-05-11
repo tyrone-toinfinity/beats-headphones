@@ -135,7 +135,6 @@ export const Shop = () => {
         <h3 className="posterEarbudsHeader2">Special Edition Beats Fit Pro</h3>
         <button className="posterEarbudsBtn">shop</button>
       </div>
-
       <Card style={{ width: "20rem" }} className="posterCardEarbuds">
         <Card.Img
           variant="top"
@@ -231,49 +230,37 @@ export const Shop = () => {
 
             <li>Apple W1 chip & Class 1 Wireless Bluetooth®</li>
           </ul>
+
           <div className="earBudsColors">
             {" "}
-            <h6>3 Colors</h6>{" "}
+            <h6>
+              {products.headpones.filter(
+                (products) => products.urlName === "beats-solo"
+              ).length + " "}
+              Colors
+            </h6>
             <div>
-              <span
-                className="dotsStudio"
-                onClick={() => {
-                  setHeroProductStudio(
-                    <img
-                      src="assets/product-img/beats05.1.webp"
-                      alt="studio headphones"
-                      className="earbudsHero"
-                    />
-                  );
-                  setColorStudio("White");
-                }}
-              ></span>
-              <span
-                className="dotsStudio"
-                onClick={() => {
-                  setHeroProductStudio(
-                    <img
-                      src="assets/product-img/beats06.1.webp"
-                      alt="studio headphones"
-                      className="earbudsHero"
-                    />
-                  );
-                  setColorStudio("Blue");
-                }}
-              ></span>
-              <span
-                className="dotsStudio"
-                onClick={() => {
-                  setHeroProductStudio(
-                    <img
-                      src="assets/product-img/beats07.1.webp"
-                      alt="studio headphones"
-                      className="earbudsHero"
-                    />
-                  );
-                  setColorStudio("Matte Black");
-                }}
-              ></span>
+              {products.headpones
+                .filter((product) => product.urlName === "beats-studio")
+                .map((product) => (
+                  <span
+                    key={product.id}
+                    className="dotsStudio"
+                    onClick={() => {
+                      setHeroProductStudio(
+                        <img
+                          src={product.image[0]}
+                          alt="Studio Headphones"
+                          className="earbudsHero"
+                        />
+                      );
+                      setColorStudio(
+                        product.color.charAt(0).toUpperCase() +
+                          product.color.slice(1)
+                      );
+                    }}
+                  ></span>
+                ))}
             </div>
           </div>
           <div className="currentColor">

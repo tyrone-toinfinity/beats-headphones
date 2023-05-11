@@ -122,17 +122,13 @@
   margin: 0 0.33rem;
   cursor: pointer;
   border: rgba(200, 200, 200, 0.7) 2px solid;
-}
-.dots,
-.dotsSolo {
   cursor: pointer;
 }
 
-.dots:target,
-.dots:focus,
-.dots:selected {
+.dots:selected,
+.dotsSolo:active,
+.dotsStudio:active {
   border: rgb(24, 217, 69) 2px solid;
-  outline: none;
 }
 
 .dots:first-child {
@@ -187,6 +183,15 @@
 }
 .dotsStudio:nth-child(3) {
   background-color: #222;
+}
+.dotsStudio:nth-child(4) {
+  background-color: #af1426;
+}
+.dotsStudio:nth-child(5) {
+  background-color: #222;
+}
+.dotsStudio:nth-child(6) {
+  background-color: #585a5b;
 }
 
 /* Poster */
