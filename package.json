@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
@@ -17,7 +18,7 @@
     "react-router-dom": "^6.11.1"
   },
   "devDependencies": {
-    "@types/react": "^18.2.5",
+    "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
     "@vitejs/plugin-react": "^4.0.0",
     "vite": "^4.3.5"

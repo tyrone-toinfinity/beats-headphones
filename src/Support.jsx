@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import { HeroBanner } from "./index";
 import "./Support.css";
 
 export const Support = () => {
@@ -16,6 +15,8 @@ export const Support = () => {
                 className="support__img"
                 src="assets/404/support-headphones.webp"
                 alt="headphone image"
+                width={400}
+                height={400}
               />
               <figcaption>HEADPHONES</figcaption>
             </figure>
@@ -33,6 +34,8 @@ export const Support = () => {
                 className="support__img"
                 src="assets/404/support-earbuds.webp"
                 alt="headphone image"
+                width={400}
+                height={400}
               />
               <figcaption>EARBUDS</figcaption>
             </figure>
@@ -52,6 +55,8 @@ export const Support = () => {
                 className="support__img"
                 src="assets/404/support-speakers.webp"
                 alt="headphone image"
+                width={352}
+                height={400}
               />
               <figcaption>SPEAKERS</figcaption>
             </figure>

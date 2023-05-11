@@ -33,6 +33,8 @@ export const Navbar = ({ navRef }) => {
             alt="logo"
             className="logo"
             onClick={() => navigate("/")}
+            width={50}
+            height={50}
           />
         </div>
         <ul className="navbar__List">

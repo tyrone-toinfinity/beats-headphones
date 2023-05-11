@@ -7,7 +7,6 @@
   letter-spacing: -1px;
   line-height: 75px;
   text-transform: uppercase;
-  /* Todo fix font */
   font-size: calc(60px + (90 - 76) * ((100vw - 1024px) / (1440 - 1024)));
 }
 

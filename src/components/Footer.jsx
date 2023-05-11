@@ -44,7 +44,11 @@ export const Footer = () => {
         {" "}
         Copyright © {year} Apple Inc. - All rights reserved.
       </p>
-      <span className="topPage" onClick={scrollToTop}>
+      <span
+        className="topPage"
+        onClick={scrollToTop}
+        onDoubleClick={scrollToTop}
+      >
         <FaChevronUp />
       </span>
     </div>
