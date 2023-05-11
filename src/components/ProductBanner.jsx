@@ -32,8 +32,8 @@ export const ProductBanner = () => {
             <h2 className="product-title">Popular Now</h2>
             <div className="row justify-content-center gap-2 ">
               <Cards products={items.headpones[1]} />
-              <Cards products={items.headpones[17]} />
-              <Cards products={items.headpones[11]} />
+              <Cards products={items.headpones[15]} />
+              <Cards products={items.headpones[9]} />
             </div>
           </div>
         </div>
