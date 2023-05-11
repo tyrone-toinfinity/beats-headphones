@@ -52,6 +52,7 @@
 
 .earbudsHero {
   width: 480px;
+  height: auto;
   margin: 0 1rem;
   animation: slideUp 1s ease 0s;
   opacity: 1;
@@ -60,7 +61,6 @@
 .earbudsHero::before {
   opacity: 0;
 }
-
 @keyframes slideUp {
   0% {
     opacity: 0;

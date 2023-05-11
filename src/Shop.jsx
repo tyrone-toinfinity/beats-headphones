@@ -93,12 +93,12 @@ export const Shop = () => {
             <li>Auto Play/Pause connection via Apple H1 chip</li>
           </ul>
           <div className="earBudsColors">
-            <h6>
+            <p>
               {products.headpones.filter(
                 (products) => products.urlName === "beats-fit-pro"
               ).length + " "}
               Colors
-            </h6>
+            </p>
             <div>
               {products.headpones
                 .filter((product) => product.urlName === "beats-fit-pro")
@@ -131,8 +131,8 @@ export const Shop = () => {
       </div>
       {/* Poster */}
       <div className="posterEarbuds">
-        <h1 className="posterEarbudsHeader">beats ˣ kim</h1>
-        <h3 className="posterEarbudsHeader2">Special Edition Beats Fit Pro</h3>
+        <p className="posterEarbudsHeader">beats ˣ kim</p>
+        <p className="posterEarbudsHeader2">Special Edition Beats Fit Pro</p>
         <button className="posterEarbudsBtn">shop</button>
       </div>
       <Card style={{ width: "20rem" }} className="posterCardEarbuds">
@@ -174,12 +174,12 @@ export const Shop = () => {
           </ul>
           <div className="earBudsColors">
             {" "}
-            <h6>
+            <p>
               {products.headpones.filter(
                 (products) => products.urlName === "beats-solo"
               ).length + " "}
               Colors
-            </h6>
+            </p>
             <div>
               {products.headpones
                 .filter((product) => product.urlName === "beats-solo")
@@ -233,12 +233,12 @@ export const Shop = () => {
 
           <div className="earBudsColors">
             {" "}
-            <h6>
+            <p>
               {products.headpones.filter(
                 (products) => products.urlName === "beats-solo"
               ).length + " "}
               Colors
-            </h6>
+            </p>
             <div>
               {products.headpones
                 .filter((product) => product.urlName === "beats-studio")

@@ -13,11 +13,10 @@ export const Footer = () => {
     <div className="legal-container">
       <div className="legal-body">
         <p>
-          <sup>1</sup>&nbsp;Offer available 9/26/22 - 11/24/22 at{" "}
-          <a href="http://www.apple.com">Apple </a>
-          and U.S. Apple retail stores. Available online until 11:59:59 p.m.
-          P.T., 11/24/22. While supplies last. Excludes taxes. Not valid with
-          any other Beats offer. $199.95 for Powerbeats Pro in Black, Ivory, and
+          <sup>1</sup>&nbsp;Offer available 9/26/22 - 11/24/22 at Apple and U.S.
+          Apple retail stores. Available online until 11:59:59 p.m. P.T.,
+          11/24/22. While supplies last. Excludes taxes. Not valid with any
+          other Beats offer. $199.95 for Powerbeats Pro in Black, Ivory, and
           Navy.
         </p>
         <p>

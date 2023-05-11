@@ -14,7 +14,7 @@ export const Support = () => {
             <figure onClick={() => navigate("/")}>
               <img
                 className="support__img"
-                src="assets/404/support-headphones.png"
+                src="assets/404/support-headphones.webp"
                 alt="headphone image"
               />
               <figcaption>HEADPHONES</figcaption>
@@ -31,7 +31,7 @@ export const Support = () => {
             <figure onClick={() => navigate("/")}>
               <img
                 className="support__img"
-                src="assets/404/support-earbuds.png"
+                src="assets/404/support-earbuds.webp"
                 alt="headphone image"
               />
               <figcaption>EARBUDS</figcaption>
@@ -50,7 +50,7 @@ export const Support = () => {
             <figure onClick={() => navigate("/")}>
               <img
                 className="support__img"
-                src="assets/404/support-speakers.png"
+                src="assets/404/support-speakers.webp"
                 alt="headphone image"
               />
               <figcaption>SPEAKERS</figcaption>
