@@ -1,4 +1,4 @@
-import { Navbar, ShippingBanner, Footer } from "./index";
+import { ShippingBanner } from "./index";
 import { useNavigate } from "react-router-dom";
 import "./Cart.css";
 
@@ -36,7 +36,6 @@ export const Cart = () => {
           <h2 className="cartSummary">Cart Summary</h2>
           <ul>
             <li>
-              {" "}
               <span>subtotal</span>
               <span>$0.00</span>
             </li>
@@ -62,7 +61,6 @@ export const Cart = () => {
           </button>
           <div className="checkoutLogosContainer">
             <figure>
-              {" "}
               <img
                 src="./assets/logos/shippingTimer.svg"
                 alt=""

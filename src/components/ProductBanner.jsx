@@ -49,6 +49,7 @@ export const ProductBanner = () => {
                 src={"./assets/logos/delivery.svg"}
                 className="shoppingImg "
                 alt="delievery logo"
+                loading="lazy"
               />
               <Card.Title className="shoppingHeader">
                 Fast, Free Delivery
@@ -71,6 +72,7 @@ export const ProductBanner = () => {
                 src={"./assets/logos/pickup.svg"}
                 className="shoppingImg"
                 alt="pickup logo"
+                loading="lazy"
               />
               <Card.Title className="shoppingHeader">
                 In-Store Pickup
@@ -93,6 +95,7 @@ export const ProductBanner = () => {
                 src={"./assets/logos/return.svg"}
                 className="shoppingImg"
                 alt="return logo"
+                loading="lazy"
               />
               <Card.Title className="shoppingHeader">
                 Extended Holiday Returns

@@ -31,15 +31,13 @@ export const App = () => {
   }, [pathname]);
 
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="products" element={<Shop />}></Route>
-        <Route path="cart" element={<Cart />}></Route>
-        <Route path="support" element={<Support />}></Route>
-        <Route path="404" element={<ErrorPage />}></Route>
-        <Route path="*" element={<Navigate to="404" />}></Route>
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="products" element={<Shop />} />
+      <Route path="cart" element={<Cart />} />
+      <Route path="support" element={<Support />} />
+      <Route path="404" element={<ErrorPage />} />
+      <Route path="*" element={<Navigate to="/404" />} />
+    </Routes>
   );
 };
