@@ -146,6 +146,7 @@ export const Shop = () => {
           variant="top"
           src="./assets/product-img/earbudsPosterMobile.webp"
           className="posterCardImg"
+          alt="woman wearing beats heaphones"
         />
         <Card.Body className="posterCardBody">
           <Card.Title className="posterEarbudsHeader">beats ˣ kim</Card.Title>
