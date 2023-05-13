@@ -127,7 +127,8 @@
 
 .dots:selected,
 .dotsSolo:active,
-.dotsStudio:active {
+.dotsStudio:active,
+.dots:checked {
   border: rgb(24, 217, 69) 2px solid;
 }
 
